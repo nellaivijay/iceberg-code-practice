@@ -1,6 +1,6 @@
-# Contributing to Iceberg Practice Environment
+# Contributing to Iceberg Code Practice
 
-Thank you for your interest in contributing to this educational repository! This project is designed to help data engineers and developers practice and improve their Apache Iceberg skills through hands-on labs and exercises.
+Thank you for your interest in contributing to this educational repository! This project is designed to help data engineers and developers practice and improve their Apache Iceberg skills through hands-on coding labs and exercises.
 
 ## Educational Purpose
 

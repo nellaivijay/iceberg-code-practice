@@ -1,6 +1,6 @@
-# Getting Started with Apache Iceberg Practice Environment
+# Getting Started with Apache Iceberg Code Practice
 
-This guide will walk you through setting up your environment and completing your first lab.
+This guide will walk you through setting up your environment and completing your first coding lab.
 
 ## Prerequisites
 
@@ -17,12 +17,12 @@ Choose one of these methods:
 
 ### Option A: Using Git (Recommended)
 ```bash
-git clone https://github.com/yourusername/iceberg-practice-env.git
-cd iceberg-practice-env
+git clone https://github.com/yourusername/iceberg-code-practice.git
+cd iceberg-code-practice
 ```
 
 ### Option B: Download ZIP
-1. Go to https://github.com/yourusername/iceberg-practice-env
+1. Go to https://github.com/yourusername/iceberg-code-practice
 2. Click the green "Code" button
 3. Select "Download ZIP"
 4. Extract the files to your computer
@@ -337,4 +337,4 @@ k3s-uninstall.sh
 
 ---
 
-**Ready to start learning?** [Begin with Lab 0](https://github.com/yourusername/iceberg-practice-env/blob/main/labs/lab-00-sample-database.md) 🚀
+**Ready to start learning?** [Begin with Lab 0](https://github.com/yourusername/iceberg-code-practice/blob/main/labs/lab-00-sample-database.md) 🚀

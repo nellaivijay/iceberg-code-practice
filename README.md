@@ -1,16 +1,16 @@
 <!--
 SEO Metadata
-Title: Apache Iceberg Practice Environment - Free Hands-on Labs for Data Lakehouse Learning
+Title: Apache Iceberg Code Practice - Free Hands-on Labs for Data Lakehouse Learning
 Description: Master Apache Iceberg with free, vendor-independent hands-on labs. Practice Spark, Trino, DuckDB, Kafka, CDC, and modern data lakehouse patterns with real-world exercises.
 Keywords: apache iceberg, data lakehouse, spark, trino, duckdb, kafka, cdc, data engineering, lakehouse architecture, table format, data lake, open source data
-Author: Iceberg Practice Environment Community
+Author: Iceberg Code Practice Community
 -->
 
-# Vendor-Independent Apache Iceberg Practice Environment
+# Apache Iceberg Code Practice
 
 ## 🎯 Overview
 
-A comprehensive, vendor-independent Apache Iceberg practice environment designed for learning and experimentation with Apache Iceberg, Apache Spark, and modern data lakehouse architectures.
+A comprehensive, vendor-independent Apache Iceberg code practice repository designed for learning and experimentation with Apache Iceberg, Apache Spark, and modern data lakehouse architectures through hands-on coding exercises.
 
 **12 hands-on labs with 100+ exercises. Completely free and open source.**
 
@@ -18,7 +18,7 @@ A comprehensive, vendor-independent Apache Iceberg practice environment designed
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                   Iceberg Practice Environment              │
+│                   Iceberg Code Practice                    │
 ├─────────────────────────────────────────────────────────────┤
 │                                                              │
 │  ┌──────────────────────────────────────────────────────┐  │

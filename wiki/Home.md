@@ -1,6 +1,6 @@
-# Apache Iceberg Practice Environment Wiki
+# Apache Iceberg Code Practice Wiki
 
-Welcome to the Apache Iceberg Practice Environment Wiki! This educational resource provides comprehensive guides and additional learning materials to supplement the hands-on labs in the main repository.
+Welcome to the Apache Iceberg Code Practice Wiki! This educational resource provides comprehensive guides and additional learning materials to supplement the hands-on coding labs in the main repository.
 
 ## 📚 Wiki Contents
 
@@ -47,7 +47,7 @@ Join our community of learners:
 
 ## 🔗 Resources
 
-- [Main Repository](https://github.com/yourusername/iceberg-practice-env)
+- [Main Repository](https://github.com/yourusername/iceberg-code-practice)
 - [Apache Iceberg Documentation](https://iceberg.apache.org/)
 - [Apache Spark Documentation](https://spark.apache.org/docs/latest/)
 - [Trino Documentation](https://trino.io/docs/current/)

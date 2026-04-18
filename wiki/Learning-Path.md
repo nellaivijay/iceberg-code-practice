@@ -306,9 +306,9 @@ After completing the learning path:
 - [Best Practices](Best-Practices.md)
 - [Troubleshooting](Troubleshooting.md)
 - [Iceberg Fundamentals](Iceberg-Fundamentals.md)
-- [Main Repository](https://github.com/yourusername/iceberg-practice-env)
+- [Main Repository](https://github.com/yourusername/iceberg-code-practice)
 - Contact: nellaivijay@gmail.com
 
 ---
 
-**Ready to start?** Begin with [Lab 0: Sample Database Setup](https://github.com/yourusername/iceberg-practice-env/blob/main/labs/lab-00-sample-database.md) 🚀
+**Ready to start?** Begin with [Lab 0: Sample Database Setup](https://github.com/yourusername/iceberg-code-practice/blob/main/labs/lab-00-sample-database.md) 🚀

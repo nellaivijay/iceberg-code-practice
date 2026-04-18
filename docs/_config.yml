@@ -1,8 +1,8 @@
 theme: jekyll-theme-minimal
-title: Apache Iceberg Practice Environment
+title: Apache Iceberg Code Practice
 description: Free Hands-on Labs for Data Lakehouse Learning
-url: "https://yourusername.github.io/iceberg-practice-env"
-baseurl: "/iceberg-practice-env"
+url: "https://yourusername.github.io/iceberg-code-practice"
+baseurl: "/iceberg-code-practice"
 github_username: yourusername
 
 # SEO
