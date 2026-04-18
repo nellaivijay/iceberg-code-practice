@@ -1,0 +1,325 @@
+version: '3.8'
+
+services:
+  # MinIO (S3-compatible storage)
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  # Apache Polaris (Iceberg REST Catalog)
+  polaris:
+    image: apache/polaris:0.7.0-incubating
+    container_name: polaris
+    ports:
+      - "8181:8181"
+    environment:
+      POLARIS_PORT: "8181"
+      POLARIS_HOST: "0.0.0.0"
+      AWS_ENDPOINT_URL: "http://minio:9000"
+      AWS_ACCESS_KEY_ID: minioadmin
+      AWS_SECRET_ACCESS_KEY: minioadmin
+    depends_on:
+      minio:
+        condition: service_healthy
+    command: >
+      sh -c "
+        echo 'Starting Apache Polaris...' &&
+        echo 'Storage endpoint: http://minio:9000' &&
+        exec java -jar /opt/polaris/polaris-service.jar server
+      "
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8181/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Spark History Server
+  spark-history:
+    image: apache/spark:3.5.0
+    container_name: spark-history-server
+    ports:
+      - "18080:18080"
+    environment:
+      SPARK_HOME: /opt/spark
+      SPARK_HISTORY_OPTS: >
+        -Dspark.history.fs.logDirectory=s3a://spark-logs/
+        -Dspark.history.provider=org.apache.spark.deploy.history.FsHistoryProvider
+      AWS_ENDPOINT_URL: "http://minio:9000"
+      AWS_ACCESS_KEY_ID: minioadmin
+      AWS_SECRET_ACCESS_KEY: minioadmin
+      HADOOP_CONF_DIR: /opt/hadoop/etc/hadoop
+    depends_on:
+      minio:
+        condition: service_healthy
+    command: >
+      sh -c "
+        echo 'Configuring Hadoop for S3...' &&
+        mkdir -p /opt/hadoop/etc/hadoop &&
+        cat > /opt/hadoop/etc/hadoop/core-site.xml << 'EOF'
+        <?xml version=\"1.0\" encoding=\"UTF-8\"?>
+        <configuration>
+          <property>
+            <name>fs.s3a.impl</name>
+            <value>org.apache.hadoop.fs.s3a.S3AFileSystem</value>
+          </property>
+          <property>
+            <name>fs.s3a.path.style.access</name>
+            <value>true</value>
+          </property>
+          <property>
+            <name>fs.s3a.endpoint</name>
+            <value>http://minio:9000</value>
+          </property>
+        </configuration>
+        EOF
+        cat > /opt/hadoop/etc/hadoop/hdfs-site.xml << 'EOF'
+        <?xml version=\"1.0\" encoding=\"UTF-8\"?>
+        <configuration>
+          <property>
+            <name>fs.s3a.access.key</name>
+            <value>minioadmin</value>
+          </property>
+          <property>
+            <name>fs.s3a.secret.key</name>
+            <value>minioadmin</value>
+          </property>
+        </configuration>
+        EOF
+        echo 'Starting Spark History Server...' &&
+        exec $SPARK_HOME/sbin/start-history-server.sh
+      "
+    volumes:
+      - spark_history_config:/opt/spark/conf
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:18080"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Spark Master (for Spark submit jobs)
+  spark-master:
+    image: apache/spark:3.5.0
+    container_name: spark-master
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    environment:
+      SPARK_MASTER: "spark://spark-master:7077"
+      SPARK_HOME: /opt/spark
+      AWS_ENDPOINT_URL: "http://minio:9000"
+      AWS_ACCESS_KEY_ID: minioadmin
+      AWS_SECRET_ACCESS_KEY: minioadmin
+    command: >
+      sh -c "
+        echo 'Configuring Spark for S3...' &&
+        mkdir -p /opt/spark/conf &&
+        cat > /opt/spark/conf/spark-defaults.conf << 'EOF'
+        spark.eventLog.enabled=true
+        spark.eventLog.dir=s3a://spark-logs/
+        spark.history.fs.logDirectory=s3a://spark-logs/
+        
+        spark.sql.catalog.iceberg=org.apache.iceberg.spark.SparkCatalog
+        spark.sql.catalog.iceberg.type=rest
+        spark.sql.catalog.iceberg.uri=http://polaris:8181/api/catalog
+        
+        spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem
+        spark.hadoop.fs.s3a.path.style.access=true
+        spark.hadoop.fs.s3a.endpoint=http://minio:9000
+        spark.hadoop.fs.s3a.access.key=minioadmin
+        spark.hadoop.fs.s3a.secret.key=minioadmin
+        EOF
+        echo 'Starting Spark Master...' &&
+        exec $SPARK_HOME/sbin/start-master.sh
+      "
+    depends_on:
+      polaris:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+
+  # Spark Worker
+  spark-worker:
+    image: apache/spark:3.5.0
+    container_name: spark-worker
+    environment:
+      SPARK_WORKER: "spark://spark-master:7077"
+      SPARK_HOME: /opt/spark
+      AWS_ENDPOINT_URL: "http://minio:9000"
+      AWS_ACCESS_KEY_ID: minioadmin
+      AWS_SECRET_ACCESS_KEY: minioadmin
+    command: >
+      sh -c "
+        echo 'Starting Spark Worker...' &&
+        exec $SPARK_HOME/sbin/start-worker.sh spark://spark-master:7077
+      "
+    depends_on:
+      spark-master:
+        condition: service_started
+
+  # Zookeeper (required for Kafka)
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    volumes:
+      - zookeeper_data:/var/lib/zookeeper/data
+      - zookeeper_logs:/var/lib/zookeeper/log
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "2181"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Kafka
+  kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    container_name: kafka
+    ports:
+      - "9092:9092"
+      - "9093:9093"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LOG_RETENTION_HOURS: 168
+      KAFKA_LOG_SEGMENT_BYTES: 1073741824
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "kafka-broker-api-versions --bootstrap-server localhost:9092"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Kafka UI (optional, for monitoring)
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: kafka-ui
+    ports:
+      - "8085:8080"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: iceberg-practice
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+      KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  # MySQL (for CDC source)
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: iceberg_root
+      MYSQL_DATABASE: cdc_source
+      MYSQL_USER: iceberg_user
+      MYSQL_PASSWORD: iceberg_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./config/mysql-init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-piceberg_root"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Debezium (for CDC)
+  debezium:
+    image: debezium/connect:2.5.0.Final
+    container_name: debezium
+    ports:
+      - "8083:8083"
+    environment:
+      BOOTSTRAP_SERVERS: kafka:9092
+      GROUP_ID: "debezium-group"
+      CONFIG_STORAGE_TYPE: memory
+      OFFSET_STORAGE_TOPIC: debezium-offsets
+      OFFSET_STORAGE_REPLICATION_FACTOR: 1
+      ADVERTISED_HOST_NAME: debezium
+      CONNECT_CONFIG_TOPIC: debezium-config
+      CONNECT_STATUS_STORAGE_TOPIC: debezium-status
+      CONNECT_PLUGIN_PATH: /kafka/connect/plugins
+      CONNECT_KEY_CONVERTER: "org.apache.kafka.connect.storage.StringConverter"
+      CONNECT_VALUE_CONVERTER: "org.apache.kafka.connect.storage.StringConverter"
+      CONNECT_REST_PORT: 8083
+      CONNECT_REST_ADVERTISED_HOST_NAME: debezium
+    depends_on:
+      kafka:
+        condition: service_healthy
+      mysql:
+        condition: service_healthy
+    volumes:
+      - debezium_data:/kafka/data
+      - debezium_logs:/kafka/logs
+      - ./config/debezium-plugins:/kafka/connect/plugins
+    command: >
+      sh -c "
+        echo 'Starting Debezium...' &&
+        echo 'Kafka brokers: kafka:9092' &&
+        echo 'MySQL host: mysql:3306' &&
+        exec /docker-entrypoint.sh start
+      "
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8083/connectors"]
+      interval: 30s
+      timeout: 10s
+      retries:5
+
+  # MySQL init scripts for CDC
+  mysql-init:
+    image: mysql:8.0
+    container_name: mysql-init
+    volumes:
+      - ./config/mysql-init:/docker-entrypoint-initdb.d
+    depends_on:
+      mysql:
+        condition: service_healthy
+    command: >
+      sh -c "
+        echo 'Creating CDC source tables...' &&
+        mysql -h mysql -uroot -piceberg_root cdc_source < /docker-entrypoint-initdb.d/init-cdc.sql
+      "
+    profiles:
+      - with-cdc-init
+
+volumes:
+  minio_data:
+  spark_history_config:
+  zookeeper_data:
+  zookeeper_logs:
+  kafka_data:
+  mysql_data:
+  debezium_data:
+  debezium_logs:
+
+networks:
+  default:
+    name: iceberg-practice-network
+
+profiles:
+  with-cdc-init:
+    includes:
+      - mysql-init

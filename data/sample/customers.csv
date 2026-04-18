@@ -1,0 +1,1001 @@
+customer_id,customer_name,customer_email,region,city,segment,signup_date,total_purchases,total_spent
+1,Nancy Lopez,customer1@example.com,south,San Diego,bronze,2023-05-01,59,1723.19
+2,Patricia Taylor,customer2@example.com,south,Atlanta,bronze,2023-01-24,23,4246.55
+3,Joseph White,customer3@example.com,west,Chicago,bronze,2023-06-23,75,1243.4
+4,Nancy Gonzalez,customer4@example.com,east,Dallas,premium,2023-08-30,53,8773.58
+5,Barbara Thomas,customer5@example.com,north,San Francisco,premium,2023-07-24,5,3259.27
+6,Thomas Smith,customer6@example.com,west,San Diego,premium,2023-10-16,54,4285.2
+7,Daniel Perez,customer7@example.com,east,San Diego,standard,2023-02-23,66,5342.68
+8,John Jackson,customer8@example.com,north,Seattle,premium,2023-11-06,82,4290.01
+9,Lisa Perez,customer9@example.com,south,Minneapolis,bronze,2023-06-06,73,9855.65
+10,James Martinez,customer10@example.com,west,Minneapolis,premium,2023-11-21,36,9239.5
+11,Daniel Rodriguez,customer11@example.com,west,Seattle,standard,2023-07-17,18,3572.72
+12,Robert Thompson,customer12@example.com,west,Boston,bronze,2023-01-05,66,1326.07
+13,Jessica Lee,customer13@example.com,east,Los Angeles,premium,2023-06-04,39,5394.21
+14,James Rodriguez,customer14@example.com,south,Portland,standard,2023-04-10,96,1301.84
+15,John Lee,customer15@example.com,west,Portland,premium,2023-06-12,93,7766.09
+16,Joseph Hernandez,customer16@example.com,north,Atlanta,bronze,2023-12-20,10,5098.04
+17,Daniel Moore,customer17@example.com,west,San Diego,premium,2023-01-27,48,8902.24
+18,Charles Jackson,customer18@example.com,west,Seattle,premium,2023-08-25,67,4779.43
+19,Mary Taylor,customer19@example.com,south,Seattle,standard,2023-11-02,27,6621.9
+20,Jennifer Wilson,customer20@example.com,east,Washington DC,premium,2023-06-12,33,2982.56
+21,Daniel White,customer21@example.com,west,New York,standard,2023-12-15,23,5006.29
+22,Karen Thompson,customer22@example.com,east,New York,standard,2023-06-05,96,8566.33
+23,Sarah Thompson,customer23@example.com,south,Austin,premium,2023-09-11,69,9176.8
+24,Daniel Miller,customer24@example.com,south,Austin,premium,2023-03-02,92,7235.79
+25,Robert Martin,customer25@example.com,south,San Francisco,bronze,2023-01-20,70,6068.12
+26,David Thompson,customer26@example.com,west,Boston,bronze,2023-01-27,32,7064.82
+27,Christopher Wilson,customer27@example.com,west,Minneapolis,standard,2023-10-23,21,955.56
+28,James Taylor,customer28@example.com,west,Washington DC,premium,2023-03-09,89,172.54
+29,David Martinez,customer29@example.com,west,Atlanta,bronze,2023-12-09,48,1246.22
+30,Christopher Anderson,customer30@example.com,north,Dallas,premium,2023-08-31,38,4365.68
+31,Linda Thomas,customer31@example.com,east,Phoenix,bronze,2023-01-12,22,324.15
+32,Jessica Moore,customer32@example.com,west,San Francisco,premium,2023-04-17,85,789.99
+33,Susan Davis,customer33@example.com,west,Los Angeles,standard,2023-05-29,34,6568.68
+34,Nancy Lopez,customer34@example.com,north,Minneapolis,standard,2023-04-11,3,1211.43
+35,Daniel Lee,customer35@example.com,south,Minneapolis,premium,2023-03-11,69,4575.86
+36,Michael Jones,customer36@example.com,north,Minneapolis,bronze,2023-07-12,18,8394.97
+37,Charles Smith,customer37@example.com,south,Dallas,standard,2023-09-23,57,1345.98
+38,Nancy Anderson,customer38@example.com,east,Philadelphia,standard,2023-09-30,81,122.39
+39,Jessica Thomas,customer39@example.com,west,Philadelphia,standard,2023-04-17,53,4886.8
+40,Lisa Hernandez,customer40@example.com,east,Houston,premium,2023-12-02,14,4713.78
+41,Susan Brown,customer41@example.com,west,San Francisco,standard,2023-03-12,50,9431.6
+42,Patricia Wilson,customer42@example.com,west,Seattle,bronze,2023-04-23,83,2232.27
+43,Joseph Garcia,customer43@example.com,north,Chicago,standard,2023-10-07,82,3172.46
+44,Patricia Hernandez,customer44@example.com,south,Austin,bronze,2023-01-07,77,2601.99
+45,Jessica Martinez,customer45@example.com,east,Phoenix,standard,2023-02-15,23,3218.34
+46,James Thompson,customer46@example.com,west,Los Angeles,premium,2023-01-19,36,9321.59
+47,John Johnson,customer47@example.com,west,Austin,bronze,2023-02-09,80,2385.74
+48,Joseph Davis,customer48@example.com,north,Houston,premium,2023-09-21,14,8707.52
+49,Michael Lopez,customer49@example.com,west,Phoenix,premium,2023-04-11,76,6044.73
+50,Thomas Hernandez,customer50@example.com,north,Chicago,premium,2023-12-01,48,251.59
+51,Sarah Jackson,customer51@example.com,east,Portland,premium,2023-01-08,19,6572.53
+52,Lisa Hernandez,customer52@example.com,south,Washington DC,standard,2023-07-07,45,117.59
+53,Susan Martin,customer53@example.com,east,New York,premium,2023-05-16,66,8517.72
+54,John White,customer54@example.com,east,Austin,premium,2023-02-04,11,1729.29
+55,Sarah Rodriguez,customer55@example.com,west,Washington DC,premium,2023-02-02,74,3700.4
+56,John Jones,customer56@example.com,north,Seattle,standard,2023-12-05,46,8709.19
+57,Sarah Miller,customer57@example.com,south,New York,bronze,2023-10-02,30,8754.16
+58,Patricia Johnson,customer58@example.com,west,Houston,bronze,2023-11-03,67,8466.33
+59,Thomas Anderson,customer59@example.com,east,Seattle,bronze,2023-09-02,8,5657.31
+60,Lisa Thomas,customer60@example.com,north,Portland,bronze,2023-07-31,1,8502.93
+61,Lisa Williams,customer61@example.com,south,Austin,standard,2023-06-09,65,7602.51
+62,David Anderson,customer62@example.com,north,Seattle,premium,2023-09-05,14,581.82
+63,Barbara Taylor,customer63@example.com,north,San Francisco,bronze,2023-02-20,7,6605.49
+64,Daniel Anderson,customer64@example.com,north,Washington DC,bronze,2023-09-25,100,7519.03
+65,Charles Gonzalez,customer65@example.com,west,Dallas,standard,2023-07-17,3,4167.79
+66,Thomas Anderson,customer66@example.com,east,Los Angeles,bronze,2023-01-04,42,1938.2
+67,Nancy Lopez,customer67@example.com,south,Austin,premium,2023-06-15,79,6670.18
+68,Linda Taylor,customer68@example.com,west,Dallas,standard,2023-06-24,67,6842.33
+69,Karen Garcia,customer69@example.com,east,Los Angeles,standard,2023-08-18,73,8653.42
+70,James Martinez,customer70@example.com,south,Washington DC,bronze,2023-04-15,47,1307.32
+71,Mary Johnson,customer71@example.com,north,San Diego,bronze,2023-01-25,6,9941.73
+72,Jessica Thomas,customer72@example.com,south,Washington DC,bronze,2023-12-26,40,5222.84
+73,James Jones,customer73@example.com,north,Washington DC,premium,2023-02-28,95,6467.05
+74,Joseph Anderson,customer74@example.com,west,Austin,bronze,2023-08-08,80,1986.42
+75,Christopher Miller,customer75@example.com,west,New York,bronze,2023-03-29,69,6680.16
+76,Richard Moore,customer76@example.com,south,Phoenix,bronze,2023-06-30,82,764.17
+77,Karen Lee,customer77@example.com,north,New York,standard,2023-01-06,46,9837.75
+78,Jennifer Lopez,customer78@example.com,south,Portland,standard,2023-10-20,80,1699.82
+79,Patricia Anderson,customer79@example.com,north,Austin,bronze,2023-12-11,42,8468.66
+80,Elizabeth Hernandez,customer80@example.com,south,Portland,bronze,2023-06-17,49,9284.15
+81,Daniel Wilson,customer81@example.com,south,Minneapolis,bronze,2023-09-29,65,4615.1
+82,Richard Miller,customer82@example.com,west,Chicago,standard,2023-09-10,49,6949.03
+83,Robert Jones,customer83@example.com,west,Houston,premium,2023-11-26,60,9672.37
+84,Robert Jones,customer84@example.com,north,Dallas,standard,2023-08-01,10,6776.08
+85,Jessica Thompson,customer85@example.com,south,San Diego,premium,2023-11-26,55,8035.22
+86,Richard White,customer86@example.com,west,Minneapolis,standard,2023-06-19,37,416.63
+87,Christopher Jackson,customer87@example.com,west,New York,premium,2023-09-14,72,6974.87
+88,Sarah Lopez,customer88@example.com,south,Chicago,standard,2023-11-18,61,7597.34
+89,Richard Martinez,customer89@example.com,north,Los Angeles,premium,2023-02-24,15,7310.97
+90,John Williams,customer90@example.com,south,Los Angeles,standard,2023-04-27,15,9151.56
+91,Mary Lee,customer91@example.com,north,Philadelphia,bronze,2023-11-30,4,3887.48
+92,Christopher Martin,customer92@example.com,south,Seattle,standard,2023-10-27,51,7462.11
+93,Sarah Rodriguez,customer93@example.com,east,Chicago,bronze,2023-04-09,13,2519.81
+94,Jennifer Thompson,customer94@example.com,west,Philadelphia,premium,2023-04-18,55,6972.51
+95,Karen Gonzalez,customer95@example.com,north,Houston,premium,2023-06-15,38,6197.65
+96,Lisa White,customer96@example.com,east,Dallas,bronze,2023-12-23,42,7321.28
+97,David Thompson,customer97@example.com,north,Austin,standard,2023-08-11,51,6956.97
+98,Mary Wilson,customer98@example.com,north,Los Angeles,standard,2023-04-12,24,737.2
+99,Daniel Perez,customer99@example.com,east,Seattle,bronze,2023-12-07,2,6408.76
+100,Nancy Jones,customer100@example.com,west,Seattle,premium,2023-12-23,78,8295.3
+101,Richard Perez,customer101@example.com,north,Houston,standard,2023-04-26,34,8664.14
+102,Karen White,customer102@example.com,west,Dallas,premium,2023-02-28,9,847.35
+103,Linda Lee,customer103@example.com,east,Portland,premium,2023-10-09,76,3458.73
+104,Susan Miller,customer104@example.com,east,Minneapolis,standard,2023-04-15,78,7059.37
+105,Charles Jackson,customer105@example.com,south,Boston,bronze,2023-04-22,36,6205.18
+106,Robert Thomas,customer106@example.com,west,Dallas,standard,2023-09-21,21,3150.92
+107,Lisa Jackson,customer107@example.com,east,Dallas,premium,2023-04-09,94,9415.9
+108,Elizabeth Brown,customer108@example.com,north,Seattle,premium,2023-02-15,42,490.41
+109,Nancy Jackson,customer109@example.com,north,Los Angeles,bronze,2023-04-01,90,8548.32
+110,Joseph Lee,customer110@example.com,north,Seattle,bronze,2023-04-25,25,8751.36
+111,Susan Lee,customer111@example.com,west,Austin,standard,2023-08-23,23,7517.15
+112,Patricia Thompson,customer112@example.com,north,Houston,standard,2023-04-25,3,4947.27
+113,Jessica Garcia,customer113@example.com,north,San Diego,bronze,2023-10-05,87,3601.36
+114,Charles Thompson,customer114@example.com,south,San Diego,standard,2023-06-10,24,6672.51
+115,Karen White,customer115@example.com,west,Chicago,standard,2023-09-25,1,8018.84
+116,Nancy Garcia,customer116@example.com,east,San Francisco,premium,2023-09-07,65,745.42
+117,Sarah Jones,customer117@example.com,north,Minneapolis,bronze,2023-09-01,52,442.76
+118,Patricia Moore,customer118@example.com,west,Los Angeles,bronze,2023-09-14,41,5036.91
+119,John Johnson,customer119@example.com,west,Boston,bronze,2023-01-08,18,1216.26
+120,Lisa Moore,customer120@example.com,west,Atlanta,premium,2023-08-25,10,467.04
+121,Karen Smith,customer121@example.com,east,Houston,standard,2023-01-11,4,8969.65
+122,David Wilson,customer122@example.com,south,Washington DC,premium,2023-06-23,76,4937.67
+123,Christopher Perez,customer123@example.com,north,Philadelphia,standard,2023-12-02,57,3558.0
+124,Susan Moore,customer124@example.com,west,Atlanta,standard,2023-12-30,20,2191.31
+125,Susan Taylor,customer125@example.com,east,Seattle,standard,2023-05-31,59,1176.94
+126,Nancy Smith,customer126@example.com,north,Minneapolis,bronze,2023-04-01,47,9487.11
+127,Jennifer Lopez,customer127@example.com,south,Minneapolis,bronze,2023-05-04,10,5414.07
+128,Jennifer Brown,customer128@example.com,east,San Diego,premium,2023-12-20,56,5726.16
+129,Mary Davis,customer129@example.com,west,Philadelphia,premium,2023-12-10,6,9280.97
+130,Joseph Wilson,customer130@example.com,west,Houston,bronze,2023-03-19,54,5008.06
+131,Karen Anderson,customer131@example.com,north,New York,standard,2023-08-04,47,8597.82
+132,Patricia Wilson,customer132@example.com,north,Dallas,premium,2023-01-14,24,1032.72
+133,Mary Johnson,customer133@example.com,north,Minneapolis,standard,2023-08-14,38,2751.07
+134,Thomas Martin,customer134@example.com,north,San Diego,premium,2023-12-30,63,1434.27
+135,Jessica Gonzalez,customer135@example.com,east,Houston,premium,2023-08-01,99,7890.89
+136,Mary Martinez,customer136@example.com,east,Minneapolis,premium,2023-01-10,2,3864.62
+137,Robert Moore,customer137@example.com,north,Seattle,bronze,2023-07-29,32,4668.92
+138,Patricia Jackson,customer138@example.com,north,Phoenix,bronze,2023-10-05,68,414.12
+139,Charles Taylor,customer139@example.com,west,Washington DC,bronze,2023-02-16,22,4970.96
+140,Christopher Lee,customer140@example.com,west,Philadelphia,premium,2023-01-10,90,194.54
+141,Nancy White,customer141@example.com,west,New York,standard,2023-09-10,91,1375.16
+142,Patricia Davis,customer142@example.com,east,New York,bronze,2023-07-03,51,4499.21
+143,Elizabeth Johnson,customer143@example.com,west,Seattle,standard,2023-09-06,63,5374.73
+144,Patricia Williams,customer144@example.com,north,San Diego,standard,2023-09-05,26,4271.21
+145,Elizabeth Perez,customer145@example.com,north,Chicago,premium,2023-09-27,28,3807.46
+146,Richard Hernandez,customer146@example.com,west,Portland,standard,2023-04-25,49,3520.55
+147,Susan Taylor,customer147@example.com,north,Minneapolis,standard,2023-01-08,70,5775.36
+148,Thomas Garcia,customer148@example.com,west,Houston,bronze,2023-10-21,1,6052.84
+149,Michael Jackson,customer149@example.com,west,Los Angeles,bronze,2023-06-30,44,2866.92
+150,Sarah Lee,customer150@example.com,south,Boston,premium,2023-12-21,37,6741.62
+151,Jessica Gonzalez,customer151@example.com,north,Austin,standard,2023-02-20,36,5515.88
+152,Charles Williams,customer152@example.com,west,Austin,standard,2023-12-21,61,3950.34
+153,Michael Wilson,customer153@example.com,east,Portland,premium,2023-11-27,56,1186.74
+154,Sarah Miller,customer154@example.com,south,San Francisco,bronze,2023-08-04,53,217.99
+155,Patricia Taylor,customer155@example.com,east,Seattle,standard,2023-03-18,13,3641.55
+156,John Smith,customer156@example.com,south,Houston,standard,2023-02-17,60,1488.71
+157,William Taylor,customer157@example.com,south,Houston,bronze,2023-08-07,37,6285.43
+158,Susan Gonzalez,customer158@example.com,west,Dallas,bronze,2023-05-16,55,406.96
+159,Nancy Brown,customer159@example.com,south,Phoenix,bronze,2023-09-24,91,7799.17
+160,Richard Hernandez,customer160@example.com,north,Portland,standard,2023-08-19,5,8435.36
+161,Barbara White,customer161@example.com,south,Boston,premium,2023-01-05,96,4237.14
+162,Sarah Lee,customer162@example.com,east,Boston,premium,2023-12-05,80,7102.41
+163,David Thomas,customer163@example.com,south,Austin,premium,2023-09-12,83,7204.36
+164,Linda Anderson,customer164@example.com,east,Chicago,standard,2023-11-20,20,9671.19
+165,William Moore,customer165@example.com,west,Los Angeles,premium,2023-06-21,35,1961.13
+166,Joseph Wilson,customer166@example.com,east,Portland,bronze,2023-06-24,56,6374.88
+167,Elizabeth Miller,customer167@example.com,north,Seattle,standard,2023-11-17,55,5340.29
+168,Daniel Martin,customer168@example.com,east,Washington DC,bronze,2023-02-26,86,8717.0
+169,Mary Martin,customer169@example.com,north,Atlanta,standard,2023-05-31,57,1859.74
+170,Charles Thompson,customer170@example.com,west,Philadelphia,standard,2023-06-23,45,5385.6
+171,Nancy Johnson,customer171@example.com,south,Minneapolis,standard,2023-10-14,77,6310.66
+172,Michael Lee,customer172@example.com,south,New York,bronze,2023-07-13,33,984.79
+173,Barbara Lee,customer173@example.com,west,Dallas,premium,2023-08-24,34,4099.01
+174,John White,customer174@example.com,south,Boston,standard,2023-05-06,96,6476.48
+175,John Smith,customer175@example.com,south,San Francisco,premium,2023-12-02,7,6516.99
+176,Nancy White,customer176@example.com,east,Chicago,premium,2023-12-16,94,6509.43
+177,James Lopez,customer177@example.com,west,Chicago,bronze,2023-06-17,36,869.71
+178,Linda Jackson,customer178@example.com,north,Washington DC,premium,2023-06-02,41,2121.45
+179,Robert Martinez,customer179@example.com,west,Atlanta,bronze,2023-03-02,71,4365.62
+180,Michael White,customer180@example.com,north,New York,standard,2023-06-13,63,7065.59
+181,Lisa Moore,customer181@example.com,north,Boston,premium,2023-11-20,12,4947.65
+182,Elizabeth Martinez,customer182@example.com,south,Los Angeles,premium,2023-02-13,58,7781.46
+183,Michael Thomas,customer183@example.com,west,San Francisco,standard,2023-02-12,86,6053.17
+184,James Garcia,customer184@example.com,west,Phoenix,bronze,2023-07-21,36,9320.78
+185,Patricia Garcia,customer185@example.com,east,Houston,standard,2023-04-08,45,2063.2
+186,Jessica Lopez,customer186@example.com,west,San Diego,premium,2023-02-16,49,9348.88
+187,Thomas Rodriguez,customer187@example.com,south,Boston,bronze,2023-09-05,37,5321.65
+188,Charles Miller,customer188@example.com,west,San Francisco,bronze,2023-12-26,76,2461.28
+189,Susan Martin,customer189@example.com,south,Seattle,standard,2023-05-06,39,6505.13
+190,Charles Thomas,customer190@example.com,east,San Diego,bronze,2023-05-04,12,7682.5
+191,Sarah Thomas,customer191@example.com,south,San Diego,premium,2023-11-29,96,6981.45
+192,John Garcia,customer192@example.com,south,Portland,premium,2023-03-04,52,3310.64
+193,James Williams,customer193@example.com,north,Los Angeles,premium,2023-11-09,3,7501.21
+194,Robert Thompson,customer194@example.com,west,Dallas,standard,2023-07-26,30,8814.76
+195,Patricia Anderson,customer195@example.com,east,New York,premium,2023-08-19,78,2527.27
+196,Christopher Hernandez,customer196@example.com,south,Los Angeles,bronze,2023-09-03,92,5074.65
+197,William Martin,customer197@example.com,north,Portland,premium,2023-06-13,28,8243.52
+198,Elizabeth Martinez,customer198@example.com,west,Washington DC,standard,2023-10-01,18,4108.5
+199,John Wilson,customer199@example.com,north,Dallas,premium,2023-11-12,39,3201.84
+200,Joseph Brown,customer200@example.com,north,Minneapolis,bronze,2023-02-12,81,1356.5
+201,Charles Gonzalez,customer201@example.com,south,Phoenix,bronze,2023-02-19,82,6764.86
+202,John Garcia,customer202@example.com,east,Washington DC,standard,2023-10-14,42,8126.57
+203,Charles Thompson,customer203@example.com,north,New York,bronze,2023-02-16,16,3755.81
+204,Karen Martinez,customer204@example.com,west,Seattle,bronze,2023-03-01,5,3162.72
+205,Linda Lee,customer205@example.com,west,Seattle,premium,2023-11-11,38,6564.42
+206,Sarah Martinez,customer206@example.com,west,Boston,bronze,2023-02-10,58,7494.02
+207,James Thompson,customer207@example.com,north,Philadelphia,bronze,2023-11-06,7,2174.0
+208,Karen Davis,customer208@example.com,north,New York,premium,2023-12-11,93,329.01
+209,Charles Thompson,customer209@example.com,north,San Diego,standard,2023-05-19,81,3140.94
+210,Charles Smith,customer210@example.com,west,Houston,standard,2023-01-02,80,5100.61
+211,Barbara Hernandez,customer211@example.com,north,San Francisco,standard,2023-06-12,91,1155.63
+212,Thomas Taylor,customer212@example.com,west,Austin,premium,2023-08-17,35,2331.03
+213,Christopher Davis,customer213@example.com,north,Austin,standard,2023-05-14,21,3395.09
+214,James Miller,customer214@example.com,west,Houston,premium,2023-06-11,78,7833.51
+215,Christopher Williams,customer215@example.com,west,New York,standard,2023-10-10,95,329.9
+216,Elizabeth Jones,customer216@example.com,south,Washington DC,bronze,2023-01-28,43,2639.28
+217,David Martin,customer217@example.com,north,Atlanta,premium,2023-06-06,38,9591.82
+218,Robert Anderson,customer218@example.com,east,Dallas,bronze,2023-05-10,19,4258.16
+219,Elizabeth White,customer219@example.com,south,San Diego,standard,2023-11-26,73,1362.93
+220,Karen Rodriguez,customer220@example.com,south,New York,standard,2023-11-28,66,4418.4
+221,Michael Lopez,customer221@example.com,east,Portland,bronze,2023-06-28,8,6147.75
+222,Linda Perez,customer222@example.com,north,Minneapolis,bronze,2023-08-29,65,125.14
+223,Daniel Rodriguez,customer223@example.com,east,Austin,standard,2023-12-14,27,9545.75
+224,William Wilson,customer224@example.com,north,New York,premium,2023-01-11,89,8068.93
+225,Daniel Davis,customer225@example.com,south,Los Angeles,standard,2023-04-14,73,7431.31
+226,James White,customer226@example.com,east,Atlanta,bronze,2023-07-08,5,2676.43
+227,James White,customer227@example.com,west,New York,premium,2023-11-07,68,4567.75
+228,Barbara Wilson,customer228@example.com,south,Seattle,standard,2023-04-05,72,9316.54
+229,Elizabeth Garcia,customer229@example.com,west,Atlanta,premium,2023-08-14,50,8641.61
+230,Michael Davis,customer230@example.com,east,Los Angeles,bronze,2023-09-18,61,2855.77
+231,Lisa Lopez,customer231@example.com,south,Minneapolis,standard,2023-11-26,33,2203.46
+232,Jessica Perez,customer232@example.com,west,Minneapolis,bronze,2023-01-28,34,9556.33
+233,Joseph Martinez,customer233@example.com,east,Washington DC,bronze,2023-11-16,100,9781.97
+234,Mary Martinez,customer234@example.com,south,Houston,bronze,2023-06-15,81,1433.93
+235,Jennifer Jackson,customer235@example.com,east,Portland,standard,2023-01-02,27,4340.94
+236,Patricia Rodriguez,customer236@example.com,north,Seattle,bronze,2023-07-31,41,2489.93
+237,Jessica Wilson,customer237@example.com,north,Seattle,standard,2023-01-10,18,5689.15
+238,Linda Johnson,customer238@example.com,north,Atlanta,standard,2023-07-09,69,1552.75
+239,Lisa Moore,customer239@example.com,east,New York,bronze,2023-05-14,26,6229.34
+240,Thomas Perez,customer240@example.com,west,Boston,premium,2023-08-14,25,115.45
+241,Elizabeth Thompson,customer241@example.com,south,Austin,premium,2023-03-16,72,4963.71
+242,Thomas Williams,customer242@example.com,north,New York,standard,2023-06-22,48,6144.3
+243,John White,customer243@example.com,south,Dallas,standard,2023-10-20,16,6225.45
+244,James Johnson,customer244@example.com,west,Phoenix,bronze,2023-09-08,95,6299.52
+245,Richard Perez,customer245@example.com,east,Los Angeles,premium,2023-03-11,81,9611.63
+246,Sarah Davis,customer246@example.com,east,San Diego,premium,2023-06-16,10,6761.33
+247,David Smith,customer247@example.com,north,Houston,bronze,2023-11-19,16,9925.85
+248,Patricia Williams,customer248@example.com,west,Phoenix,standard,2023-01-24,55,8525.02
+249,Daniel Moore,customer249@example.com,south,Chicago,premium,2023-05-30,7,2192.07
+250,Karen Anderson,customer250@example.com,north,Chicago,standard,2023-05-01,37,3990.5
+251,Charles Taylor,customer251@example.com,south,Chicago,bronze,2023-02-26,49,9808.37
+252,Linda Jones,customer252@example.com,east,Washington DC,bronze,2023-06-21,95,6838.13
+253,Elizabeth White,customer253@example.com,west,Houston,standard,2023-05-10,5,6098.31
+254,Richard Lopez,customer254@example.com,north,Los Angeles,bronze,2023-04-26,53,1075.43
+255,Christopher Lopez,customer255@example.com,west,Dallas,standard,2023-03-02,58,678.66
+256,Linda Thomas,customer256@example.com,east,Minneapolis,bronze,2023-09-01,77,8482.94
+257,Mary Garcia,customer257@example.com,west,San Francisco,premium,2023-12-02,85,2172.78
+258,David Hernandez,customer258@example.com,east,Boston,standard,2023-12-17,19,4046.66
+259,Patricia Wilson,customer259@example.com,north,Dallas,premium,2023-06-19,45,7387.77
+260,Charles Johnson,customer260@example.com,south,Seattle,standard,2023-12-30,57,5209.46
+261,William Brown,customer261@example.com,west,Philadelphia,standard,2023-07-17,58,9719.2
+262,Lisa Williams,customer262@example.com,north,Atlanta,premium,2023-06-01,86,491.32
+263,Lisa Garcia,customer263@example.com,south,Austin,bronze,2023-04-22,84,7450.36
+264,Daniel Perez,customer264@example.com,south,Seattle,standard,2023-04-12,26,7948.62
+265,Linda Anderson,customer265@example.com,north,Minneapolis,premium,2023-01-22,54,7097.42
+266,Robert Hernandez,customer266@example.com,north,Los Angeles,premium,2023-04-29,39,711.47
+267,Joseph Garcia,customer267@example.com,south,Washington DC,premium,2023-03-30,56,4951.92
+268,Linda Thomas,customer268@example.com,south,Portland,premium,2023-11-23,26,5110.6
+269,David Anderson,customer269@example.com,west,Boston,premium,2023-08-22,34,8953.79
+270,Susan Jones,customer270@example.com,north,Austin,premium,2023-07-21,26,3217.67
+271,David Wilson,customer271@example.com,west,Chicago,bronze,2023-01-29,15,1838.42
+272,William Smith,customer272@example.com,east,Atlanta,standard,2023-06-01,8,5468.96
+273,Daniel Lopez,customer273@example.com,east,Philadelphia,bronze,2023-07-25,60,7531.36
+274,Patricia White,customer274@example.com,north,Austin,premium,2023-02-13,10,7975.49
+275,Daniel Perez,customer275@example.com,south,Austin,premium,2023-05-31,59,4246.18
+276,Mary Miller,customer276@example.com,south,Portland,bronze,2023-01-27,87,5463.08
+277,Michael Martin,customer277@example.com,west,Atlanta,standard,2023-02-15,19,183.3
+278,William Martinez,customer278@example.com,south,Washington DC,premium,2023-08-29,82,3817.2
+279,Joseph Jones,customer279@example.com,west,Minneapolis,premium,2023-03-07,91,3387.43
+280,John Thomas,customer280@example.com,east,Washington DC,premium,2023-10-04,22,9258.52
+281,Karen Smith,customer281@example.com,south,Washington DC,bronze,2023-08-27,17,2736.98
+282,William Brown,customer282@example.com,east,Dallas,premium,2023-09-17,47,9886.76
+283,Christopher Johnson,customer283@example.com,south,Phoenix,standard,2023-02-25,18,5023.37
+284,Patricia Taylor,customer284@example.com,west,Dallas,bronze,2023-06-13,73,8502.46
+285,Patricia Gonzalez,customer285@example.com,north,Atlanta,premium,2023-03-30,48,3647.64
+286,Robert Brown,customer286@example.com,west,Boston,bronze,2023-10-20,6,3740.14
+287,Christopher Rodriguez,customer287@example.com,east,Portland,standard,2023-05-10,29,3880.28
+288,Robert White,customer288@example.com,north,Los Angeles,bronze,2023-07-31,59,3068.87
+289,Daniel Williams,customer289@example.com,east,Minneapolis,bronze,2023-06-12,85,5251.08
+290,Michael Rodriguez,customer290@example.com,south,New York,standard,2023-10-02,82,7440.33
+291,Christopher Williams,customer291@example.com,east,Washington DC,bronze,2023-08-18,17,1128.43
+292,Robert Williams,customer292@example.com,south,Seattle,bronze,2023-04-21,81,7813.53
+293,Robert Williams,customer293@example.com,west,Austin,standard,2023-09-16,39,4624.55
+294,John Martinez,customer294@example.com,south,Minneapolis,standard,2023-06-25,15,5737.61
+295,Mary Johnson,customer295@example.com,east,Portland,standard,2023-02-22,61,3192.98
+296,Daniel Hernandez,customer296@example.com,south,Dallas,standard,2023-11-16,92,5606.09
+297,Lisa Moore,customer297@example.com,east,New York,premium,2023-01-14,75,8053.75
+298,James Taylor,customer298@example.com,west,Chicago,premium,2023-10-30,14,3215.78
+299,Barbara Brown,customer299@example.com,west,New York,standard,2023-12-29,75,1282.93
+300,Robert Jones,customer300@example.com,east,Washington DC,standard,2023-12-02,24,7083.73
+301,Nancy Taylor,customer301@example.com,east,Philadelphia,bronze,2023-06-20,28,6237.86
+302,Lisa Garcia,customer302@example.com,west,Chicago,standard,2023-06-15,96,3918.15
+303,Robert White,customer303@example.com,north,Boston,premium,2023-04-29,15,2260.47
+304,Thomas Moore,customer304@example.com,east,Washington DC,bronze,2023-01-09,80,7963.37
+305,Richard Thomas,customer305@example.com,west,Seattle,bronze,2023-11-27,92,6473.79
+306,Susan Thomas,customer306@example.com,east,Dallas,premium,2023-07-23,81,5273.38
+307,Joseph Anderson,customer307@example.com,south,San Diego,premium,2023-07-04,23,1592.05
+308,William Thomas,customer308@example.com,west,Los Angeles,bronze,2023-04-22,13,8245.49
+309,David Thompson,customer309@example.com,west,Portland,standard,2023-01-22,38,7140.11
+310,Richard Johnson,customer310@example.com,east,Phoenix,premium,2023-08-31,38,5030.76
+311,Patricia Brown,customer311@example.com,east,Chicago,premium,2023-04-27,53,2042.63
+312,Karen Davis,customer312@example.com,south,Chicago,standard,2023-12-25,29,8994.82
+313,Patricia Brown,customer313@example.com,west,Minneapolis,bronze,2023-03-01,59,6996.05
+314,Elizabeth Lopez,customer314@example.com,south,Washington DC,standard,2023-03-04,4,9772.33
+315,Thomas Thompson,customer315@example.com,west,San Diego,standard,2023-06-11,42,7211.57
+316,James Jackson,customer316@example.com,south,San Francisco,standard,2023-09-28,56,8869.47
+317,Patricia Hernandez,customer317@example.com,east,Boston,bronze,2023-12-07,40,6301.99
+318,David Davis,customer318@example.com,north,San Diego,standard,2023-03-17,57,1421.69
+319,Linda Anderson,customer319@example.com,east,New York,premium,2023-03-29,26,4122.59
+320,David White,customer320@example.com,south,Chicago,standard,2023-06-25,96,3032.28
+321,Joseph Thompson,customer321@example.com,west,San Diego,standard,2023-06-08,98,7787.44
+322,Lisa Rodriguez,customer322@example.com,south,Portland,standard,2023-10-05,23,3162.91
+323,Elizabeth Davis,customer323@example.com,south,Portland,premium,2023-08-30,27,4349.69
+324,John Williams,customer324@example.com,south,Austin,premium,2023-10-12,75,8618.96
+325,Karen Miller,customer325@example.com,west,New York,premium,2023-07-29,93,9700.79
+326,Michael Perez,customer326@example.com,west,Minneapolis,standard,2023-09-25,80,8926.31
+327,Joseph Moore,customer327@example.com,east,San Francisco,standard,2023-09-26,98,3596.5
+328,David Smith,customer328@example.com,south,Minneapolis,standard,2023-07-11,31,7120.95
+329,Barbara Miller,customer329@example.com,west,San Diego,bronze,2023-01-30,96,9525.05
+330,James Martinez,customer330@example.com,north,Portland,bronze,2023-03-15,80,9761.4
+331,James Williams,customer331@example.com,west,Houston,bronze,2023-06-08,60,192.93
+332,Christopher Johnson,customer332@example.com,south,Philadelphia,standard,2023-04-08,68,8364.31
+333,John Moore,customer333@example.com,north,Seattle,bronze,2023-07-03,4,7718.21
+334,Jennifer Smith,customer334@example.com,north,Austin,standard,2023-07-17,2,7818.68
+335,Sarah Anderson,customer335@example.com,south,Austin,standard,2023-04-13,77,4091.08
+336,Christopher Rodriguez,customer336@example.com,west,Philadelphia,premium,2023-06-13,4,9169.86
+337,Linda Williams,customer337@example.com,west,Chicago,standard,2023-01-24,54,6707.8
+338,Jessica Wilson,customer338@example.com,east,Minneapolis,bronze,2023-07-28,37,1182.71
+339,Charles Jackson,customer339@example.com,east,Philadelphia,premium,2023-03-02,60,5778.11
+340,Joseph Lee,customer340@example.com,east,Phoenix,bronze,2023-10-15,10,688.54
+341,Richard Thomas,customer341@example.com,east,Chicago,premium,2023-10-03,42,766.5
+342,Barbara Gonzalez,customer342@example.com,east,Phoenix,premium,2023-08-09,52,4469.04
+343,Sarah Wilson,customer343@example.com,south,Philadelphia,standard,2023-11-30,34,9932.73
+344,Jennifer Moore,customer344@example.com,east,San Francisco,bronze,2023-06-09,71,7521.46
+345,Jennifer Garcia,customer345@example.com,south,Philadelphia,premium,2023-04-08,79,2827.77
+346,Elizabeth Lopez,customer346@example.com,south,Los Angeles,standard,2023-04-08,65,1455.92
+347,Michael Lee,customer347@example.com,east,Minneapolis,premium,2023-07-26,43,8240.28
+348,Daniel Martinez,customer348@example.com,east,Seattle,bronze,2023-01-31,100,2144.5
+349,Daniel Lee,customer349@example.com,north,Boston,bronze,2023-04-20,86,2609.33
+350,Charles Johnson,customer350@example.com,south,Houston,bronze,2023-11-11,95,5241.29
+351,Elizabeth Thompson,customer351@example.com,north,Los Angeles,bronze,2023-09-17,31,8114.26
+352,Jennifer Perez,customer352@example.com,west,Chicago,premium,2023-12-02,16,3219.02
+353,Susan Moore,customer353@example.com,east,San Diego,bronze,2023-01-18,92,2997.34
+354,Barbara Jones,customer354@example.com,west,Dallas,bronze,2023-01-27,82,5511.08
+355,John Thompson,customer355@example.com,west,New York,standard,2023-06-21,47,4192.84
+356,Daniel Moore,customer356@example.com,east,Los Angeles,premium,2023-08-31,86,9698.86
+357,Joseph Perez,customer357@example.com,south,Seattle,standard,2023-10-26,7,645.83
+358,Thomas Smith,customer358@example.com,east,Boston,premium,2023-02-12,55,7854.22
+359,Elizabeth Miller,customer359@example.com,north,New York,bronze,2023-08-05,51,2573.68
+360,Robert Miller,customer360@example.com,south,Atlanta,bronze,2023-03-03,86,4920.36
+361,Linda Thomas,customer361@example.com,north,San Diego,bronze,2023-07-18,9,1165.65
+362,Mary Jones,customer362@example.com,west,Philadelphia,premium,2023-10-26,80,305.82
+363,Barbara Miller,customer363@example.com,south,San Diego,premium,2023-08-19,16,3532.66
+364,William Taylor,customer364@example.com,south,San Francisco,standard,2023-11-04,91,2016.73
+365,Mary Martinez,customer365@example.com,north,Chicago,premium,2023-10-13,90,5992.31
+366,Nancy Williams,customer366@example.com,west,San Diego,premium,2023-01-18,42,5165.38
+367,Christopher Jackson,customer367@example.com,east,Washington DC,bronze,2023-11-16,61,1511.24
+368,Thomas Anderson,customer368@example.com,west,Boston,standard,2023-10-11,79,3670.18
+369,Elizabeth Johnson,customer369@example.com,east,Seattle,premium,2023-10-12,23,1962.71
+370,Jennifer Davis,customer370@example.com,east,Houston,premium,2023-12-23,86,9160.03
+371,Barbara Garcia,customer371@example.com,west,Chicago,bronze,2023-07-31,67,4639.54
+372,Christopher Miller,customer372@example.com,south,Portland,premium,2023-01-28,29,6827.76
+373,Karen Taylor,customer373@example.com,east,San Francisco,standard,2023-11-27,94,111.81
+374,Barbara Miller,customer374@example.com,west,Seattle,standard,2023-06-01,93,4198.65
+375,Karen Lopez,customer375@example.com,north,Chicago,premium,2023-08-24,13,1705.8
+376,Jessica White,customer376@example.com,west,Austin,bronze,2023-12-07,54,5999.41
+377,William Rodriguez,customer377@example.com,east,Austin,standard,2023-08-05,54,1523.87
+378,Jennifer Martinez,customer378@example.com,north,Chicago,bronze,2023-01-19,90,3871.81
+379,Jessica Gonzalez,customer379@example.com,west,Philadelphia,standard,2023-05-18,68,5961.0
+380,Lisa Thompson,customer380@example.com,north,Philadelphia,bronze,2023-03-04,14,759.01
+381,Joseph Perez,customer381@example.com,west,Seattle,bronze,2023-10-01,29,1471.87
+382,Robert Miller,customer382@example.com,south,Boston,bronze,2023-12-04,26,9376.03
+383,Barbara Lopez,customer383@example.com,east,Boston,premium,2023-07-07,33,5329.93
+384,William Garcia,customer384@example.com,east,Seattle,standard,2023-07-13,19,3111.24
+385,Richard Moore,customer385@example.com,south,Houston,bronze,2023-11-18,52,8650.32
+386,Nancy Williams,customer386@example.com,north,Washington DC,bronze,2023-12-05,29,6234.96
+387,Daniel Johnson,customer387@example.com,south,San Diego,standard,2023-10-28,44,1710.9
+388,Charles Martin,customer388@example.com,north,San Diego,premium,2023-09-06,27,9370.69
+389,Mary Williams,customer389@example.com,north,New York,bronze,2023-02-12,27,486.57
+390,Daniel Smith,customer390@example.com,west,Seattle,premium,2023-04-05,94,7491.21
+391,Sarah White,customer391@example.com,south,Minneapolis,premium,2023-04-27,12,5047.1
+392,Elizabeth Garcia,customer392@example.com,west,Chicago,premium,2023-04-11,41,9679.53
+393,Karen Jones,customer393@example.com,west,Minneapolis,premium,2023-03-04,21,5511.38
+394,Elizabeth Martinez,customer394@example.com,west,Chicago,premium,2023-08-18,45,4300.86
+395,Linda Davis,customer395@example.com,east,Washington DC,bronze,2023-05-03,93,4961.7
+396,Barbara Johnson,customer396@example.com,south,San Francisco,premium,2023-07-06,55,8251.55
+397,Charles Brown,customer397@example.com,west,Seattle,standard,2023-09-26,75,5943.74
+398,James Johnson,customer398@example.com,east,New York,bronze,2023-02-26,73,6471.09
+399,Elizabeth Moore,customer399@example.com,south,Atlanta,bronze,2023-01-29,93,7061.54
+400,Mary Gonzalez,customer400@example.com,north,Houston,premium,2023-11-21,9,5825.49
+401,Linda Garcia,customer401@example.com,east,Houston,bronze,2023-12-14,47,4252.94
+402,Charles Brown,customer402@example.com,west,Dallas,premium,2023-08-17,60,6038.14
+403,Nancy Lee,customer403@example.com,east,Seattle,bronze,2023-07-07,69,1173.27
+404,Nancy Thomas,customer404@example.com,north,Philadelphia,premium,2023-12-15,21,8039.42
+405,Barbara Jones,customer405@example.com,north,Portland,standard,2023-09-19,80,3231.53
+406,Sarah Davis,customer406@example.com,north,Philadelphia,bronze,2023-12-09,41,6082.92
+407,Joseph Jones,customer407@example.com,south,San Diego,premium,2023-03-06,55,3785.08
+408,Thomas Perez,customer408@example.com,east,Atlanta,bronze,2023-12-08,53,3299.22
+409,Nancy Hernandez,customer409@example.com,north,Dallas,premium,2023-08-03,85,1899.16
+410,Karen White,customer410@example.com,south,Minneapolis,premium,2023-09-05,49,8193.84
+411,Lisa White,customer411@example.com,north,Boston,standard,2023-02-24,44,4094.24
+412,Susan Jackson,customer412@example.com,east,Philadelphia,premium,2023-06-12,55,6766.22
+413,Michael Thomas,customer413@example.com,east,Austin,standard,2023-10-18,84,5868.49
+414,Linda Garcia,customer414@example.com,south,Atlanta,standard,2023-10-06,17,3739.1
+415,William Thompson,customer415@example.com,north,Boston,bronze,2023-02-01,81,9937.95
+416,Charles Johnson,customer416@example.com,east,Boston,premium,2023-04-18,55,3561.87
+417,Mary Thompson,customer417@example.com,south,San Francisco,standard,2023-03-13,71,6203.06
+418,Joseph Lopez,customer418@example.com,west,Los Angeles,premium,2023-10-21,54,6020.61
+419,Nancy Lee,customer419@example.com,west,Los Angeles,standard,2023-05-29,14,4601.3
+420,Linda Garcia,customer420@example.com,west,Boston,standard,2023-02-28,77,6582.06
+421,James Hernandez,customer421@example.com,east,Dallas,standard,2023-09-14,49,1375.43
+422,David Smith,customer422@example.com,east,Seattle,bronze,2023-11-18,79,3334.82
+423,Lisa Brown,customer423@example.com,west,San Francisco,premium,2023-02-11,48,9251.74
+424,Joseph Johnson,customer424@example.com,north,Austin,bronze,2023-08-04,89,1909.39
+425,John Gonzalez,customer425@example.com,west,Houston,standard,2023-04-27,100,4340.26
+426,Robert Miller,customer426@example.com,east,Dallas,premium,2023-06-27,78,8319.05
+427,David Smith,customer427@example.com,south,Los Angeles,premium,2023-12-13,77,6779.97
+428,Barbara Jones,customer428@example.com,north,Boston,premium,2023-05-11,48,5841.63
+429,Sarah Anderson,customer429@example.com,west,Minneapolis,standard,2023-03-06,54,517.8
+430,Robert Lopez,customer430@example.com,north,Washington DC,standard,2023-06-24,10,5903.83
+431,Barbara Miller,customer431@example.com,west,Philadelphia,standard,2023-02-09,19,8171.32
+432,Susan Anderson,customer432@example.com,south,Boston,premium,2023-07-26,57,1721.14
+433,Joseph Gonzalez,customer433@example.com,south,Minneapolis,premium,2023-08-22,88,7621.24
+434,Susan Jackson,customer434@example.com,west,Dallas,standard,2023-11-06,78,1712.88
+435,Robert Taylor,customer435@example.com,west,Washington DC,premium,2023-09-24,81,717.49
+436,Jennifer Lopez,customer436@example.com,south,Atlanta,standard,2023-10-05,78,8387.18
+437,Nancy Taylor,customer437@example.com,north,Houston,standard,2023-12-20,40,1986.22
+438,Joseph Rodriguez,customer438@example.com,north,New York,standard,2023-02-02,24,3268.6
+439,Karen Garcia,customer439@example.com,north,San Diego,standard,2023-07-03,60,8807.64
+440,Michael Perez,customer440@example.com,north,Austin,premium,2023-12-15,69,1954.32
+441,Elizabeth Anderson,customer441@example.com,west,Washington DC,bronze,2023-04-18,65,4531.02
+442,Linda Lee,customer442@example.com,west,Atlanta,premium,2023-07-17,9,6559.39
+443,Susan Johnson,customer443@example.com,east,Philadelphia,premium,2023-09-12,85,273.57
+444,James Davis,customer444@example.com,south,Phoenix,premium,2023-07-26,2,5807.93
+445,Christopher Wilson,customer445@example.com,west,Chicago,premium,2023-01-20,51,714.16
+446,Daniel Jones,customer446@example.com,west,Los Angeles,bronze,2023-06-21,65,458.98
+447,Richard Miller,customer447@example.com,east,Portland,standard,2023-02-13,56,1549.44
+448,David Moore,customer448@example.com,south,San Francisco,bronze,2023-05-13,51,8581.73
+449,Daniel Rodriguez,customer449@example.com,south,Portland,premium,2023-08-12,3,9924.49
+450,Sarah Brown,customer450@example.com,north,San Diego,premium,2023-02-25,12,9668.24
+451,Robert Smith,customer451@example.com,west,San Diego,standard,2023-12-26,69,8553.91
+452,Jessica Lee,customer452@example.com,south,San Francisco,premium,2023-06-24,8,8584.44
+453,James White,customer453@example.com,west,Minneapolis,premium,2023-08-22,39,3785.14
+454,Susan Martin,customer454@example.com,south,New York,premium,2023-08-25,7,7728.42
+455,Robert Lopez,customer455@example.com,north,Los Angeles,premium,2024-01-01,82,3984.95
+456,Linda Rodriguez,customer456@example.com,north,Washington DC,bronze,2023-07-22,69,5837.18
+457,Linda Davis,customer457@example.com,east,Houston,standard,2023-09-28,79,5936.58
+458,Linda Williams,customer458@example.com,north,Minneapolis,standard,2023-06-03,98,5824.71
+459,Robert Williams,customer459@example.com,west,Chicago,premium,2023-11-08,42,6949.87
+460,Patricia Gonzalez,customer460@example.com,east,Portland,premium,2023-01-23,75,3262.2
+461,David Smith,customer461@example.com,south,Portland,premium,2023-06-20,2,9865.94
+462,David Lopez,customer462@example.com,east,Phoenix,standard,2023-03-21,82,2305.42
+463,Lisa White,customer463@example.com,west,Boston,premium,2023-07-23,66,8133.26
+464,Daniel Miller,customer464@example.com,north,Philadelphia,standard,2023-10-18,64,1274.39
+465,John Brown,customer465@example.com,south,San Diego,premium,2023-10-24,34,3028.7
+466,Nancy Brown,customer466@example.com,west,San Diego,standard,2023-11-14,17,1137.18
+467,Elizabeth Brown,customer467@example.com,east,Chicago,standard,2023-02-01,93,9173.72
+468,Thomas Perez,customer468@example.com,east,Atlanta,standard,2023-04-30,82,9389.28
+469,Sarah Hernandez,customer469@example.com,north,Washington DC,standard,2023-08-16,96,2788.01
+470,Daniel Rodriguez,customer470@example.com,east,New York,premium,2023-04-02,29,5484.06
+471,William Taylor,customer471@example.com,west,Seattle,bronze,2023-08-15,20,358.84
+472,Charles Jones,customer472@example.com,west,San Francisco,standard,2023-06-26,10,1990.72
+473,Karen Martinez,customer473@example.com,north,New York,standard,2023-06-28,69,4045.24
+474,David Garcia,customer474@example.com,south,Portland,bronze,2023-06-25,98,555.09
+475,Joseph Hernandez,customer475@example.com,west,Boston,premium,2023-03-03,6,905.96
+476,Charles Miller,customer476@example.com,north,Houston,premium,2023-01-29,87,1523.69
+477,Karen Jones,customer477@example.com,north,San Diego,bronze,2023-07-30,46,6636.95
+478,Thomas Perez,customer478@example.com,west,Houston,bronze,2023-11-30,76,8111.46
+479,Susan Davis,customer479@example.com,east,Chicago,premium,2023-08-26,93,3681.98
+480,Charles Miller,customer480@example.com,east,Seattle,premium,2023-11-09,60,8625.26
+481,Elizabeth Perez,customer481@example.com,west,Chicago,standard,2023-10-09,76,7303.18
+482,Joseph Moore,customer482@example.com,south,Boston,premium,2023-03-23,37,6175.28
+483,Richard Martin,customer483@example.com,east,Houston,standard,2023-08-12,11,7131.45
+484,Charles Smith,customer484@example.com,south,Washington DC,bronze,2023-07-29,31,1455.36
+485,Sarah Jackson,customer485@example.com,east,New York,bronze,2023-05-07,9,4274.03
+486,Nancy Williams,customer486@example.com,south,Austin,standard,2023-03-10,26,207.47
+487,Nancy Johnson,customer487@example.com,south,Dallas,bronze,2023-04-09,12,8703.43
+488,James Taylor,customer488@example.com,north,Boston,premium,2023-03-07,75,6327.88
+489,David Smith,customer489@example.com,south,Portland,premium,2023-01-31,82,2583.64
+490,David Anderson,customer490@example.com,south,San Francisco,bronze,2024-01-01,63,9771.15
+491,Charles Jones,customer491@example.com,west,Austin,bronze,2023-10-19,12,2377.0
+492,Thomas Williams,customer492@example.com,west,Washington DC,standard,2023-08-17,94,3464.38
+493,Barbara Brown,customer493@example.com,west,San Diego,premium,2023-08-13,80,6177.09
+494,James Anderson,customer494@example.com,west,Boston,premium,2023-12-08,92,3679.65
+495,Elizabeth Gonzalez,customer495@example.com,west,Austin,bronze,2023-03-29,20,1961.1
+496,Daniel Martin,customer496@example.com,east,Minneapolis,bronze,2023-09-17,15,3090.4
+497,Charles Rodriguez,customer497@example.com,east,Phoenix,standard,2023-05-30,66,1016.08
+498,David Hernandez,customer498@example.com,west,San Diego,standard,2023-12-03,11,2810.04
+499,Sarah Smith,customer499@example.com,east,Washington DC,bronze,2023-05-03,26,207.31
+500,Robert Anderson,customer500@example.com,south,Portland,standard,2023-07-08,45,7524.53
+501,Barbara Brown,customer501@example.com,north,New York,premium,2023-12-04,10,3678.92
+502,Nancy Johnson,customer502@example.com,south,Chicago,premium,2023-02-27,41,368.07
+503,Charles Wilson,customer503@example.com,west,Washington DC,standard,2023-01-15,12,6238.59
+504,Thomas Thomas,customer504@example.com,north,San Francisco,standard,2023-05-20,72,2608.69
+505,Susan Johnson,customer505@example.com,south,Washington DC,bronze,2023-07-02,48,643.42
+506,Jessica Brown,customer506@example.com,north,Chicago,bronze,2023-05-19,16,3042.06
+507,Charles Gonzalez,customer507@example.com,east,Seattle,bronze,2023-11-17,75,5094.57
+508,Lisa White,customer508@example.com,east,Chicago,standard,2023-12-18,17,4298.47
+509,Robert Thomas,customer509@example.com,east,Boston,standard,2023-07-24,36,3591.3
+510,David Perez,customer510@example.com,north,New York,premium,2023-07-17,52,7556.44
+511,William Johnson,customer511@example.com,east,Houston,bronze,2023-11-27,3,114.66
+512,John Davis,customer512@example.com,east,Los Angeles,bronze,2023-10-15,86,7975.27
+513,Karen Martinez,customer513@example.com,north,Minneapolis,standard,2023-11-28,91,4069.72
+514,John Davis,customer514@example.com,south,Washington DC,bronze,2023-07-15,62,2474.93
+515,Robert Lee,customer515@example.com,east,Boston,standard,2023-08-09,67,6938.51
+516,Michael Lee,customer516@example.com,west,Houston,bronze,2023-11-04,9,5468.48
+517,Richard Martinez,customer517@example.com,east,San Francisco,bronze,2023-09-03,41,649.67
+518,Linda Rodriguez,customer518@example.com,south,Phoenix,bronze,2023-11-18,58,5113.11
+519,Nancy Hernandez,customer519@example.com,north,Los Angeles,premium,2023-01-22,81,4214.19
+520,Elizabeth Garcia,customer520@example.com,north,Los Angeles,premium,2023-09-13,53,4886.62
+521,Susan Lee,customer521@example.com,east,Austin,standard,2023-12-17,88,3267.59
+522,Sarah Wilson,customer522@example.com,north,Atlanta,standard,2023-05-23,91,878.09
+523,Elizabeth Martin,customer523@example.com,west,Portland,standard,2023-03-31,81,1002.29
+524,Linda Thomas,customer524@example.com,west,Philadelphia,premium,2023-04-09,77,2881.02
+525,Mary Lopez,customer525@example.com,north,Seattle,bronze,2023-01-26,10,727.47
+526,Susan Jackson,customer526@example.com,north,Portland,bronze,2023-04-12,8,4905.36
+527,David Jackson,customer527@example.com,east,Boston,premium,2023-04-07,100,2617.15
+528,Patricia Anderson,customer528@example.com,south,Washington DC,bronze,2023-01-29,30,5020.97
+529,William Smith,customer529@example.com,south,Seattle,premium,2023-11-14,64,5287.46
+530,Joseph Martin,customer530@example.com,west,Austin,premium,2023-01-20,45,6935.67
+531,Daniel Rodriguez,customer531@example.com,east,Chicago,standard,2023-05-20,1,2015.9
+532,Daniel Lee,customer532@example.com,west,Dallas,bronze,2023-01-31,13,9808.92
+533,David Martin,customer533@example.com,east,Atlanta,bronze,2023-01-02,72,5871.18
+534,Sarah Thomas,customer534@example.com,south,New York,standard,2023-06-14,67,6366.79
+535,Susan Thomas,customer535@example.com,east,Seattle,premium,2023-07-28,76,3545.71
+536,David Hernandez,customer536@example.com,west,Philadelphia,bronze,2023-03-14,12,7428.48
+537,Daniel Martin,customer537@example.com,north,Seattle,bronze,2023-06-26,10,361.27
+538,Karen Brown,customer538@example.com,west,Austin,bronze,2023-11-23,57,5810.25
+539,Charles Jones,customer539@example.com,east,Houston,premium,2023-03-11,69,5212.28
+540,Robert Moore,customer540@example.com,east,Boston,bronze,2023-08-02,60,7843.43
+541,Linda Davis,customer541@example.com,north,Dallas,premium,2023-12-29,54,771.95
+542,Elizabeth Thomas,customer542@example.com,north,New York,premium,2023-10-17,92,7502.65
+543,Karen Davis,customer543@example.com,north,Seattle,standard,2023-03-01,97,7628.85
+544,Charles Moore,customer544@example.com,east,San Francisco,bronze,2023-08-15,72,757.61
+545,Karen Lopez,customer545@example.com,west,Austin,bronze,2023-10-30,35,7638.39
+546,Joseph Johnson,customer546@example.com,west,San Francisco,premium,2023-03-21,20,7201.36
+547,Richard Anderson,customer547@example.com,south,Phoenix,premium,2023-10-26,21,7898.59
+548,Barbara Rodriguez,customer548@example.com,east,Dallas,bronze,2023-07-02,23,979.59
+549,Thomas White,customer549@example.com,east,Dallas,bronze,2023-05-10,57,5030.5
+550,David Lopez,customer550@example.com,north,Philadelphia,premium,2023-07-27,15,5436.18
+551,John Martinez,customer551@example.com,west,Dallas,standard,2023-06-11,32,1113.59
+552,Linda Rodriguez,customer552@example.com,north,Seattle,bronze,2023-08-06,32,7978.89
+553,John Davis,customer553@example.com,east,Los Angeles,bronze,2023-08-20,55,6260.77
+554,David Martin,customer554@example.com,south,San Diego,bronze,2023-02-22,33,6875.66
+555,Thomas Jones,customer555@example.com,south,New York,standard,2023-08-14,16,1604.0
+556,Joseph Jackson,customer556@example.com,south,New York,bronze,2023-12-11,84,7459.88
+557,Karen Hernandez,customer557@example.com,east,New York,premium,2023-10-27,83,7087.93
+558,Richard Anderson,customer558@example.com,south,Austin,standard,2023-10-29,71,7037.34
+559,Linda Thomas,customer559@example.com,north,Los Angeles,standard,2023-05-05,74,5757.97
+560,Linda Anderson,customer560@example.com,north,Phoenix,premium,2023-10-07,5,5910.54
+561,John Martin,customer561@example.com,south,New York,premium,2023-07-15,18,9189.74
+562,Daniel Hernandez,customer562@example.com,east,Philadelphia,standard,2023-12-09,28,4488.32
+563,Karen Brown,customer563@example.com,west,Dallas,bronze,2023-05-02,91,2927.03
+564,Karen Jackson,customer564@example.com,west,San Diego,bronze,2023-08-18,18,6416.93
+565,Daniel White,customer565@example.com,east,Minneapolis,standard,2023-11-05,11,1493.08
+566,Karen Lopez,customer566@example.com,south,Phoenix,premium,2023-09-21,70,1294.5
+567,Linda Martin,customer567@example.com,north,Atlanta,premium,2023-12-13,76,9648.89
+568,Barbara Miller,customer568@example.com,south,Atlanta,bronze,2023-12-25,62,3961.65
+569,Charles Hernandez,customer569@example.com,west,Boston,standard,2023-02-09,6,6832.32
+570,Linda Hernandez,customer570@example.com,north,San Francisco,bronze,2023-03-28,80,790.73
+571,Barbara Smith,customer571@example.com,north,Minneapolis,premium,2023-12-02,54,1433.88
+572,Susan Moore,customer572@example.com,east,Dallas,bronze,2023-05-04,17,6345.18
+573,Robert Davis,customer573@example.com,west,Philadelphia,standard,2023-12-19,30,3753.87
+574,Thomas Brown,customer574@example.com,east,Boston,standard,2023-11-20,34,5148.45
+575,Elizabeth Johnson,customer575@example.com,west,Los Angeles,premium,2023-05-10,82,6801.47
+576,David Taylor,customer576@example.com,south,Phoenix,bronze,2023-01-15,81,7121.58
+577,Jennifer Brown,customer577@example.com,east,San Diego,premium,2023-01-22,29,3366.79
+578,Jennifer Miller,customer578@example.com,south,San Francisco,standard,2023-07-01,25,983.12
+579,Barbara Anderson,customer579@example.com,north,Portland,premium,2023-08-02,46,4676.48
+580,Susan Wilson,customer580@example.com,north,Philadelphia,bronze,2023-11-08,76,3517.9
+581,Lisa Rodriguez,customer581@example.com,east,Los Angeles,premium,2023-07-29,53,2869.3
+582,Nancy Jackson,customer582@example.com,north,Phoenix,premium,2023-04-11,80,4112.06
+583,Karen Davis,customer583@example.com,south,Seattle,standard,2023-11-19,75,3438.9
+584,Barbara Wilson,customer584@example.com,west,Portland,standard,2023-03-16,59,506.45
+585,Nancy Anderson,customer585@example.com,south,San Francisco,bronze,2023-04-06,36,3090.25
+586,John Johnson,customer586@example.com,south,San Diego,standard,2023-02-07,86,8988.74
+587,Patricia Smith,customer587@example.com,east,Boston,bronze,2023-03-21,76,6339.37
+588,Joseph Davis,customer588@example.com,south,Phoenix,standard,2023-05-07,61,1101.71
+589,Michael Lopez,customer589@example.com,west,Seattle,premium,2023-01-23,45,7232.93
+590,Jessica Jones,customer590@example.com,west,Philadelphia,premium,2023-06-09,74,5451.23
+591,Jennifer Perez,customer591@example.com,south,Atlanta,standard,2023-10-27,42,1466.23
+592,Nancy Taylor,customer592@example.com,south,Philadelphia,premium,2023-03-17,44,7934.85
+593,David Jackson,customer593@example.com,west,Chicago,premium,2023-11-06,23,3277.66
+594,Joseph Lee,customer594@example.com,north,Philadelphia,premium,2023-04-01,83,2405.3
+595,Charles Martin,customer595@example.com,east,Dallas,bronze,2023-11-28,15,6250.28
+596,Robert Rodriguez,customer596@example.com,east,Seattle,standard,2023-02-09,38,4477.33
+597,Charles Miller,customer597@example.com,north,San Diego,standard,2023-09-19,58,4165.18
+598,Charles Miller,customer598@example.com,east,Atlanta,premium,2023-10-02,10,8677.86
+599,Michael Taylor,customer599@example.com,north,Phoenix,premium,2023-08-21,81,2598.8
+600,James Perez,customer600@example.com,east,Phoenix,premium,2023-01-03,22,7750.76
+601,David Jackson,customer601@example.com,west,Philadelphia,bronze,2023-04-24,71,6881.13
+602,William Rodriguez,customer602@example.com,north,Minneapolis,standard,2023-04-14,84,922.36
+603,William Jackson,customer603@example.com,east,Phoenix,bronze,2023-09-05,68,6200.82
+604,John Smith,customer604@example.com,east,Atlanta,bronze,2023-10-23,10,4964.97
+605,Lisa Martin,customer605@example.com,west,San Francisco,premium,2023-06-20,78,226.83
+606,Thomas Taylor,customer606@example.com,west,Seattle,premium,2023-01-24,73,9336.34
+607,Karen Martin,customer607@example.com,south,Atlanta,premium,2023-05-11,22,6799.8
+608,Daniel Martinez,customer608@example.com,west,San Diego,bronze,2023-06-25,25,8966.49
+609,Robert Brown,customer609@example.com,north,San Francisco,premium,2023-04-19,71,7243.6
+610,Robert Thompson,customer610@example.com,west,Austin,bronze,2023-07-27,95,8612.43
+611,Elizabeth Garcia,customer611@example.com,south,Atlanta,standard,2023-07-01,65,8921.86
+612,David Martin,customer612@example.com,west,Portland,premium,2023-02-18,4,5105.31
+613,Christopher White,customer613@example.com,south,Houston,bronze,2023-04-10,38,9058.39
+614,Richard Taylor,customer614@example.com,east,Minneapolis,standard,2023-10-07,87,9782.83
+615,Robert Garcia,customer615@example.com,north,Atlanta,bronze,2023-11-10,22,1449.87
+616,Barbara Martin,customer616@example.com,east,Philadelphia,premium,2023-05-28,65,7303.43
+617,Patricia Taylor,customer617@example.com,south,San Diego,bronze,2023-08-18,18,4454.98
+618,James Jackson,customer618@example.com,east,San Francisco,standard,2023-07-30,88,5901.68
+619,Daniel Lopez,customer619@example.com,east,Houston,bronze,2023-07-30,42,7523.04
+620,Barbara Johnson,customer620@example.com,south,Seattle,premium,2023-08-12,46,3748.09
+621,Elizabeth Jackson,customer621@example.com,south,Boston,premium,2023-11-04,57,4445.98
+622,Michael Hernandez,customer622@example.com,north,Minneapolis,standard,2023-04-03,81,9719.41
+623,John Perez,customer623@example.com,north,Chicago,standard,2023-01-21,50,9442.54
+624,Robert Miller,customer624@example.com,south,San Francisco,premium,2023-09-11,94,9582.61
+625,Linda Taylor,customer625@example.com,east,Dallas,standard,2023-09-15,86,6738.46
+626,David Jones,customer626@example.com,west,Portland,bronze,2023-09-28,37,2437.04
+627,Thomas Johnson,customer627@example.com,south,Portland,bronze,2023-05-24,57,1838.55
+628,Sarah Brown,customer628@example.com,north,Seattle,standard,2023-08-12,52,5137.49
+629,Nancy Lopez,customer629@example.com,west,New York,bronze,2023-03-12,67,9657.84
+630,John Thompson,customer630@example.com,south,Seattle,premium,2023-05-30,69,5713.41
+631,Richard Lopez,customer631@example.com,east,Washington DC,standard,2023-12-22,34,8215.78
+632,Daniel Wilson,customer632@example.com,east,Chicago,standard,2023-01-18,8,8078.37
+633,Patricia Taylor,customer633@example.com,east,Minneapolis,standard,2023-10-12,3,5342.7
+634,Elizabeth Jackson,customer634@example.com,east,Austin,premium,2023-10-11,33,3993.42
+635,John Jones,customer635@example.com,south,Atlanta,bronze,2023-05-04,4,2136.16
+636,Karen Lopez,customer636@example.com,south,Atlanta,bronze,2023-05-17,6,779.9
+637,William Williams,customer637@example.com,west,Dallas,premium,2023-05-06,95,6666.92
+638,Thomas Davis,customer638@example.com,west,Atlanta,standard,2023-07-16,33,1456.99
+639,Barbara Smith,customer639@example.com,east,San Francisco,bronze,2023-08-07,14,2991.43
+640,Jennifer Johnson,customer640@example.com,east,Dallas,premium,2023-09-13,25,5099.0
+641,Michael Williams,customer641@example.com,south,Dallas,premium,2023-09-10,21,4541.4
+642,William Wilson,customer642@example.com,west,Los Angeles,bronze,2023-06-24,56,3607.4
+643,John White,customer643@example.com,south,Houston,standard,2023-11-27,59,9555.34
+644,Daniel Lopez,customer644@example.com,south,Boston,standard,2023-11-03,9,2983.12
+645,Robert Brown,customer645@example.com,south,Minneapolis,standard,2023-03-14,66,8268.56
+646,Joseph Davis,customer646@example.com,north,Portland,premium,2023-09-20,88,5262.28
+647,Mary Taylor,customer647@example.com,west,Seattle,bronze,2023-01-09,53,6097.74
+648,Linda Lopez,customer648@example.com,west,San Francisco,premium,2023-07-09,35,6425.58
+649,David Williams,customer649@example.com,west,Dallas,standard,2023-10-07,21,7286.37
+650,Linda Martinez,customer650@example.com,west,Dallas,bronze,2023-04-11,28,9273.57
+651,Karen Martin,customer651@example.com,west,Washington DC,bronze,2023-04-11,76,7200.23
+652,Elizabeth Lopez,customer652@example.com,north,Chicago,premium,2023-07-02,65,2993.51
+653,Michael Martinez,customer653@example.com,south,Washington DC,standard,2023-01-29,82,5194.91
+654,Sarah Anderson,customer654@example.com,west,Dallas,premium,2023-07-23,31,3371.2
+655,William Jackson,customer655@example.com,west,Atlanta,premium,2023-04-05,57,5101.79
+656,Karen Smith,customer656@example.com,north,San Diego,premium,2023-02-23,46,7975.12
+657,Susan Rodriguez,customer657@example.com,west,Los Angeles,bronze,2023-05-16,13,3057.53
+658,Karen Garcia,customer658@example.com,south,New York,bronze,2023-03-25,85,1252.94
+659,David Lopez,customer659@example.com,west,Austin,premium,2023-02-14,13,1024.33
+660,Charles Garcia,customer660@example.com,east,Philadelphia,premium,2023-08-29,10,2464.34
+661,Jessica Hernandez,customer661@example.com,east,San Diego,premium,2023-09-08,14,8650.88
+662,Christopher White,customer662@example.com,north,Los Angeles,standard,2023-03-18,43,2255.25
+663,Barbara Lopez,customer663@example.com,south,San Diego,premium,2023-07-18,48,6227.99
+664,David Lee,customer664@example.com,north,Washington DC,standard,2023-12-04,32,7241.69
+665,Nancy Taylor,customer665@example.com,north,New York,premium,2023-02-25,10,4118.33
+666,Thomas Thompson,customer666@example.com,east,New York,premium,2023-09-23,76,4764.8
+667,Linda Moore,customer667@example.com,east,Portland,standard,2023-09-16,46,8652.77
+668,Jennifer Smith,customer668@example.com,south,Boston,premium,2023-11-15,98,200.43
+669,William White,customer669@example.com,south,Dallas,premium,2023-04-29,79,2119.63
+670,Patricia Jackson,customer670@example.com,east,Minneapolis,premium,2023-03-23,30,9128.6
+671,Linda Davis,customer671@example.com,south,Seattle,standard,2023-01-12,70,3238.88
+672,Linda Hernandez,customer672@example.com,south,Philadelphia,premium,2023-09-18,76,5767.08
+673,William Johnson,customer673@example.com,south,Seattle,premium,2023-08-06,98,5975.31
+674,Nancy Miller,customer674@example.com,east,Houston,standard,2023-11-05,70,7680.8
+675,John Hernandez,customer675@example.com,west,Washington DC,standard,2023-08-14,22,9814.33
+676,Jennifer Johnson,customer676@example.com,east,Austin,bronze,2023-01-11,83,2027.49
+677,Barbara Martin,customer677@example.com,west,San Francisco,premium,2023-10-05,76,2896.99
+678,Christopher Davis,customer678@example.com,east,Portland,bronze,2023-06-24,93,8949.23
+679,Michael Perez,customer679@example.com,south,Washington DC,premium,2023-11-28,47,3505.97
+680,Thomas Lopez,customer680@example.com,north,Austin,standard,2023-04-26,58,6204.07
+681,Barbara Thomas,customer681@example.com,north,Houston,standard,2023-03-21,59,561.72
+682,John Lee,customer682@example.com,south,Chicago,standard,2023-04-04,41,9828.21
+683,Elizabeth Hernandez,customer683@example.com,east,Boston,premium,2023-06-13,66,4053.38
+684,William Garcia,customer684@example.com,east,Houston,bronze,2023-04-26,26,6434.46
+685,Robert Taylor,customer685@example.com,west,San Francisco,bronze,2023-03-27,35,1722.24
+686,John White,customer686@example.com,south,Philadelphia,standard,2023-08-11,56,9546.44
+687,Elizabeth Smith,customer687@example.com,north,San Diego,premium,2023-08-05,32,2080.7
+688,James Lopez,customer688@example.com,south,Minneapolis,bronze,2023-11-09,78,6621.61
+689,Thomas Garcia,customer689@example.com,east,Seattle,premium,2023-08-29,59,9880.8
+690,David Anderson,customer690@example.com,west,Dallas,bronze,2023-12-29,60,7659.92
+691,Sarah Williams,customer691@example.com,north,Minneapolis,bronze,2023-10-17,66,9790.79
+692,John Lopez,customer692@example.com,east,Minneapolis,bronze,2023-05-16,4,3231.68
+693,John Martin,customer693@example.com,north,New York,standard,2023-08-25,30,7005.76
+694,Robert Johnson,customer694@example.com,west,Philadelphia,standard,2023-11-11,54,9049.59
+695,David Brown,customer695@example.com,north,San Diego,bronze,2023-08-29,83,228.29
+696,John White,customer696@example.com,south,Austin,bronze,2023-04-18,17,6153.09
+697,Jennifer Hernandez,customer697@example.com,north,Phoenix,premium,2023-06-05,91,3567.05
+698,John Smith,customer698@example.com,north,Portland,premium,2023-08-02,81,1498.14
+699,Jennifer Smith,customer699@example.com,north,Philadelphia,standard,2023-05-27,49,803.77
+700,William Thompson,customer700@example.com,west,Chicago,standard,2023-07-01,60,4862.98
+701,John Lee,customer701@example.com,south,San Francisco,standard,2023-01-23,28,6063.0
+702,Lisa Smith,customer702@example.com,south,Atlanta,standard,2023-02-08,69,5230.49
+703,David Davis,customer703@example.com,north,Atlanta,premium,2023-05-20,42,7404.44
+704,Charles Moore,customer704@example.com,east,San Francisco,standard,2023-12-27,18,2694.97
+705,Elizabeth Brown,customer705@example.com,east,Atlanta,premium,2023-06-18,69,9325.5
+706,Charles Martinez,customer706@example.com,south,Minneapolis,premium,2023-06-07,59,4373.0
+707,Daniel Hernandez,customer707@example.com,south,New York,premium,2023-08-07,16,8798.78
+708,Lisa Moore,customer708@example.com,east,Boston,premium,2023-03-18,63,8787.03
+709,Lisa Jackson,customer709@example.com,north,Minneapolis,premium,2023-07-17,98,6921.13
+710,Elizabeth Thompson,customer710@example.com,east,Portland,bronze,2023-04-23,100,4712.23
+711,Nancy Miller,customer711@example.com,south,Seattle,bronze,2023-08-10,94,6798.1
+712,Christopher Thompson,customer712@example.com,north,Atlanta,standard,2023-12-25,45,7876.82
+713,William White,customer713@example.com,west,Houston,premium,2023-03-27,40,3060.37
+714,Joseph Martin,customer714@example.com,south,Seattle,standard,2023-01-22,89,889.65
+715,Lisa Taylor,customer715@example.com,south,Houston,premium,2023-02-26,54,9876.59
+716,Nancy Johnson,customer716@example.com,north,Los Angeles,bronze,2023-07-14,55,1823.83
+717,James Davis,customer717@example.com,south,Seattle,premium,2023-09-09,28,7477.85
+718,Charles Hernandez,customer718@example.com,east,Phoenix,bronze,2023-11-25,81,3435.16
+719,Susan Brown,customer719@example.com,north,Houston,premium,2023-02-26,59,523.26
+720,David Rodriguez,customer720@example.com,east,Philadelphia,standard,2023-07-31,2,9111.02
+721,John Garcia,customer721@example.com,east,Atlanta,standard,2023-03-04,48,6006.68
+722,Lisa Rodriguez,customer722@example.com,south,Phoenix,standard,2023-10-03,3,8487.96
+723,Barbara Williams,customer723@example.com,south,Los Angeles,standard,2023-07-04,67,6667.59
+724,Barbara White,customer724@example.com,north,New York,bronze,2023-07-07,31,567.57
+725,Robert Martinez,customer725@example.com,east,Philadelphia,bronze,2023-11-11,92,8326.62
+726,Nancy Davis,customer726@example.com,west,San Francisco,premium,2023-05-15,21,6007.57
+727,Lisa Thompson,customer727@example.com,north,Philadelphia,bronze,2023-01-03,66,7262.55
+728,William Smith,customer728@example.com,east,Los Angeles,bronze,2023-11-06,90,8610.93
+729,Jennifer Martinez,customer729@example.com,west,Portland,premium,2023-12-22,14,7848.18
+730,Elizabeth Rodriguez,customer730@example.com,south,Los Angeles,premium,2023-09-10,33,2015.31
+731,Joseph Lopez,customer731@example.com,west,Chicago,premium,2023-12-16,93,2682.7
+732,Linda Thompson,customer732@example.com,north,Atlanta,premium,2023-07-04,46,4428.92
+733,Christopher Moore,customer733@example.com,south,Houston,bronze,2023-12-29,95,1557.29
+734,Elizabeth Gonzalez,customer734@example.com,north,Dallas,standard,2023-06-26,46,6829.0
+735,Lisa Gonzalez,customer735@example.com,west,San Francisco,bronze,2023-09-25,19,3965.94
+736,Nancy Rodriguez,customer736@example.com,north,Philadelphia,bronze,2023-02-09,89,7734.94
+737,Barbara Taylor,customer737@example.com,east,Philadelphia,bronze,2023-03-21,56,6796.2
+738,Jessica Moore,customer738@example.com,west,Houston,premium,2023-09-10,32,9411.45
+739,Barbara White,customer739@example.com,north,Chicago,premium,2023-01-23,84,9649.91
+740,John Smith,customer740@example.com,north,Houston,standard,2023-04-28,73,5934.36
+741,Lisa Garcia,customer741@example.com,west,Dallas,bronze,2023-08-28,10,2982.41
+742,Susan Brown,customer742@example.com,south,Minneapolis,bronze,2023-07-11,11,479.79
+743,Charles Rodriguez,customer743@example.com,east,Washington DC,standard,2023-06-23,41,1352.6
+744,Karen Hernandez,customer744@example.com,south,Austin,bronze,2023-05-18,3,5730.16
+745,Barbara Smith,customer745@example.com,south,Dallas,standard,2023-07-19,2,6035.51
+746,Robert Garcia,customer746@example.com,east,Phoenix,bronze,2023-10-28,32,1394.9
+747,David Thomas,customer747@example.com,south,Los Angeles,premium,2023-06-28,54,609.78
+748,Daniel Martinez,customer748@example.com,east,Portland,standard,2023-03-26,83,4081.95
+749,Patricia Johnson,customer749@example.com,north,Boston,premium,2023-08-26,84,1737.19
+750,Mary Taylor,customer750@example.com,north,Austin,standard,2023-03-09,74,7076.52
+751,Sarah Gonzalez,customer751@example.com,west,Los Angeles,standard,2023-02-04,11,2964.93
+752,David Davis,customer752@example.com,north,Phoenix,bronze,2023-03-24,14,6304.09
+753,Nancy Johnson,customer753@example.com,east,Portland,premium,2023-09-23,43,6936.34
+754,Daniel Jackson,customer754@example.com,east,Phoenix,bronze,2023-12-17,51,3748.24
+755,Linda White,customer755@example.com,west,Boston,bronze,2023-09-07,91,7914.28
+756,Patricia Perez,customer756@example.com,east,Portland,premium,2023-08-13,39,6218.09
+757,Susan Lopez,customer757@example.com,east,Seattle,standard,2023-03-19,39,2294.63
+758,Jennifer Thomas,customer758@example.com,east,Portland,standard,2023-08-29,4,8666.9
+759,Michael Martinez,customer759@example.com,north,Phoenix,bronze,2023-07-07,70,3006.16
+760,Richard Thompson,customer760@example.com,east,Washington DC,premium,2023-08-23,92,974.61
+761,Daniel Gonzalez,customer761@example.com,east,Atlanta,standard,2023-06-27,61,9879.12
+762,Christopher Thompson,customer762@example.com,west,Philadelphia,bronze,2023-07-31,41,1523.84
+763,Patricia Jones,customer763@example.com,north,Dallas,premium,2023-09-01,79,7143.04
+764,Karen Smith,customer764@example.com,west,Houston,bronze,2023-03-06,57,7528.55
+765,Michael Garcia,customer765@example.com,south,Portland,standard,2023-04-27,75,3537.95
+766,Daniel Thomas,customer766@example.com,east,Washington DC,standard,2023-04-07,81,7686.61
+767,Richard Thompson,customer767@example.com,east,Phoenix,standard,2023-02-24,58,6283.68
+768,James Taylor,customer768@example.com,west,Los Angeles,bronze,2023-01-18,13,764.97
+769,Thomas Rodriguez,customer769@example.com,north,San Diego,bronze,2023-08-06,6,6923.78
+770,John Johnson,customer770@example.com,north,Washington DC,premium,2023-06-01,77,6519.96
+771,William White,customer771@example.com,east,San Francisco,premium,2023-10-29,77,1602.96
+772,Barbara Williams,customer772@example.com,east,Seattle,bronze,2023-02-28,53,701.1
+773,William Wilson,customer773@example.com,south,Boston,bronze,2023-04-26,78,1019.58
+774,Mary White,customer774@example.com,east,Los Angeles,standard,2023-01-18,94,8337.45
+775,Christopher Garcia,customer775@example.com,north,Seattle,premium,2023-02-16,2,1262.0
+776,Barbara Taylor,customer776@example.com,west,Houston,premium,2023-05-01,2,824.97
+777,Michael Taylor,customer777@example.com,west,Phoenix,standard,2023-04-08,55,1614.01
+778,Richard Anderson,customer778@example.com,south,San Francisco,standard,2023-09-29,93,3467.11
+779,Charles Lee,customer779@example.com,south,San Francisco,bronze,2023-06-10,100,5197.97
+780,Barbara Thomas,customer780@example.com,north,Portland,premium,2023-05-04,66,2608.83
+781,Robert Johnson,customer781@example.com,south,Boston,standard,2023-02-10,43,3610.11
+782,Daniel Martinez,customer782@example.com,west,Phoenix,standard,2023-09-01,4,4064.04
+783,Jessica Moore,customer783@example.com,east,Atlanta,bronze,2023-12-16,73,9332.46
+784,Lisa Taylor,customer784@example.com,south,Chicago,premium,2023-09-19,57,1386.63
+785,Patricia Hernandez,customer785@example.com,west,Minneapolis,premium,2023-05-13,65,8430.25
+786,Elizabeth Thomas,customer786@example.com,south,Austin,bronze,2023-09-20,47,8733.98
+787,Charles Williams,customer787@example.com,north,New York,premium,2023-03-01,18,8296.34
+788,Robert Miller,customer788@example.com,north,Austin,premium,2023-08-18,3,2000.96
+789,Christopher Taylor,customer789@example.com,north,Washington DC,bronze,2023-11-29,49,2717.34
+790,Joseph Lopez,customer790@example.com,west,Dallas,standard,2023-04-08,41,7806.9
+791,William Anderson,customer791@example.com,west,Austin,standard,2023-01-07,55,1749.03
+792,Jennifer White,customer792@example.com,south,San Francisco,standard,2023-05-24,21,2100.96
+793,Jennifer Thomas,customer793@example.com,north,Portland,bronze,2023-02-03,92,153.11
+794,William Smith,customer794@example.com,south,Phoenix,standard,2023-07-24,88,1334.41
+795,David Taylor,customer795@example.com,west,Chicago,standard,2023-06-13,35,323.06
+796,William Jackson,customer796@example.com,west,Minneapolis,premium,2023-06-27,19,6608.21
+797,John Taylor,customer797@example.com,east,Philadelphia,standard,2023-08-23,37,1021.07
+798,Sarah Jones,customer798@example.com,west,San Francisco,standard,2023-02-27,66,4143.68
+799,John Brown,customer799@example.com,west,Phoenix,premium,2023-07-23,88,4598.25
+800,Daniel White,customer800@example.com,east,Portland,bronze,2023-12-22,45,4119.41
+801,Elizabeth Lopez,customer801@example.com,east,Philadelphia,premium,2023-09-27,22,722.44
+802,Sarah Thompson,customer802@example.com,east,New York,standard,2023-07-19,15,3412.8
+803,Daniel Perez,customer803@example.com,west,Boston,standard,2023-12-16,88,9068.37
+804,Barbara Thomas,customer804@example.com,east,Austin,standard,2023-07-01,77,365.27
+805,Richard Gonzalez,customer805@example.com,north,Houston,premium,2023-05-09,91,8546.04
+806,Jessica Thompson,customer806@example.com,west,Boston,standard,2023-01-21,43,4814.73
+807,Sarah Hernandez,customer807@example.com,west,San Francisco,standard,2023-09-21,67,2206.21
+808,Karen Davis,customer808@example.com,north,Atlanta,premium,2023-02-26,87,5990.47
+809,Daniel Anderson,customer809@example.com,west,New York,standard,2023-05-31,79,3797.57
+810,Patricia Martinez,customer810@example.com,west,Washington DC,standard,2023-08-16,7,7658.48
+811,John Jackson,customer811@example.com,east,San Diego,standard,2023-08-22,8,2030.56
+812,William Johnson,customer812@example.com,south,Washington DC,premium,2023-11-16,8,8353.45
+813,Robert Martinez,customer813@example.com,north,Minneapolis,premium,2023-04-01,20,7998.83
+814,Elizabeth Taylor,customer814@example.com,east,San Francisco,premium,2023-07-01,90,1503.33
+815,Barbara Miller,customer815@example.com,north,Philadelphia,premium,2023-08-13,54,5058.99
+816,Michael Jackson,customer816@example.com,east,Seattle,bronze,2023-08-28,84,8717.14
+817,Richard Gonzalez,customer817@example.com,south,Dallas,premium,2023-11-20,34,2188.59
+818,Jessica Johnson,customer818@example.com,north,New York,standard,2023-05-12,96,8542.54
+819,Richard Lopez,customer819@example.com,south,Portland,standard,2023-06-13,31,4942.42
+820,Christopher Lee,customer820@example.com,south,San Francisco,standard,2023-09-02,87,7309.92
+821,Lisa Rodriguez,customer821@example.com,south,Los Angeles,premium,2023-06-18,49,6280.97
+822,David Miller,customer822@example.com,north,New York,standard,2023-04-12,83,5410.5
+823,Richard Miller,customer823@example.com,north,San Diego,premium,2023-11-21,16,9513.22
+824,Susan Perez,customer824@example.com,south,Boston,bronze,2023-05-22,42,5061.41
+825,James Lopez,customer825@example.com,east,Dallas,bronze,2023-01-23,92,2596.52
+826,Patricia White,customer826@example.com,south,Atlanta,standard,2023-11-08,11,270.17
+827,Karen Smith,customer827@example.com,west,Philadelphia,standard,2023-01-22,71,5117.57
+828,Richard Moore,customer828@example.com,east,Washington DC,premium,2023-05-01,45,2304.92
+829,William Thompson,customer829@example.com,south,San Francisco,bronze,2023-06-14,9,6433.77
+830,James Williams,customer830@example.com,east,Minneapolis,premium,2023-12-16,58,6458.41
+831,Jessica Williams,customer831@example.com,north,Los Angeles,standard,2023-09-20,52,2741.72
+832,Sarah Hernandez,customer832@example.com,north,Atlanta,standard,2023-12-04,15,5850.48
+833,John Moore,customer833@example.com,west,Houston,bronze,2023-04-24,44,8207.15
+834,Daniel Hernandez,customer834@example.com,south,Phoenix,standard,2023-12-26,2,6131.38
+835,Patricia Johnson,customer835@example.com,west,Washington DC,bronze,2023-05-06,91,7176.11
+836,Robert Martin,customer836@example.com,north,New York,bronze,2023-12-19,87,4372.03
+837,Jennifer Garcia,customer837@example.com,east,Phoenix,premium,2023-04-09,40,703.13
+838,David Anderson,customer838@example.com,west,Chicago,bronze,2023-07-05,97,875.25
+839,Nancy Martinez,customer839@example.com,west,Washington DC,bronze,2023-04-13,76,7930.31
+840,Richard White,customer840@example.com,east,Houston,standard,2023-07-13,33,3634.02
+841,Susan Jackson,customer841@example.com,north,New York,premium,2023-05-19,26,1060.96
+842,Karen Williams,customer842@example.com,east,Dallas,bronze,2023-09-14,73,3271.31
+843,Michael Moore,customer843@example.com,south,New York,premium,2023-06-06,80,6542.16
+844,John Lee,customer844@example.com,west,New York,premium,2023-07-04,44,6143.58
+845,Jessica Jones,customer845@example.com,east,Atlanta,bronze,2023-10-04,30,9078.78
+846,Jennifer Miller,customer846@example.com,west,Chicago,bronze,2023-07-13,17,8937.42
+847,Lisa Perez,customer847@example.com,north,Houston,premium,2023-11-10,64,4014.46
+848,William Taylor,customer848@example.com,east,Washington DC,bronze,2023-07-12,31,7884.18
+849,Sarah Wilson,customer849@example.com,west,Atlanta,standard,2023-01-02,75,1153.56
+850,Thomas Smith,customer850@example.com,north,New York,standard,2023-06-09,95,3919.46
+851,Joseph Hernandez,customer851@example.com,north,Austin,premium,2023-10-30,13,9531.15
+852,Susan Davis,customer852@example.com,south,San Diego,bronze,2023-10-03,73,9534.97
+853,Nancy Anderson,customer853@example.com,west,Boston,standard,2023-08-11,43,7682.44
+854,David Thompson,customer854@example.com,east,Phoenix,premium,2023-05-03,98,7280.88
+855,Jessica Jones,customer855@example.com,south,Portland,premium,2023-01-29,35,7524.1
+856,Nancy Jones,customer856@example.com,south,Phoenix,standard,2023-12-25,89,7297.61
+857,Karen Anderson,customer857@example.com,east,Atlanta,standard,2023-07-05,86,4214.48
+858,Robert Martinez,customer858@example.com,south,Austin,standard,2023-08-26,25,1077.4
+859,Joseph Perez,customer859@example.com,south,Philadelphia,standard,2023-02-23,7,3468.92
+860,Jennifer Thompson,customer860@example.com,east,Austin,premium,2023-01-06,64,7934.56
+861,Michael Perez,customer861@example.com,west,Phoenix,premium,2023-01-24,82,7025.92
+862,Daniel Perez,customer862@example.com,south,Houston,bronze,2023-01-24,89,1585.74
+863,Jessica Lee,customer863@example.com,east,Los Angeles,premium,2023-05-04,74,7834.92
+864,William Johnson,customer864@example.com,east,Chicago,bronze,2023-06-06,11,4721.66
+865,William White,customer865@example.com,south,Dallas,bronze,2023-07-31,71,1220.82
+866,Mary Martinez,customer866@example.com,south,Portland,premium,2023-08-14,79,543.2
+867,Lisa Hernandez,customer867@example.com,west,Washington DC,standard,2023-02-22,46,9862.05
+868,Mary Martin,customer868@example.com,south,Chicago,premium,2023-04-01,86,7678.29
+869,John Taylor,customer869@example.com,north,Portland,standard,2023-01-30,74,6172.59
+870,Michael Garcia,customer870@example.com,west,San Francisco,bronze,2023-06-22,69,1124.82
+871,Thomas Jones,customer871@example.com,west,Austin,bronze,2023-10-20,34,5322.76
+872,Linda Miller,customer872@example.com,west,Portland,premium,2023-10-13,7,2167.74
+873,Michael Hernandez,customer873@example.com,west,Portland,premium,2023-10-16,50,6846.74
+874,Elizabeth Rodriguez,customer874@example.com,north,San Diego,premium,2023-09-29,62,2662.67
+875,Lisa Perez,customer875@example.com,north,Austin,standard,2023-06-22,27,2151.83
+876,Christopher Wilson,customer876@example.com,east,Seattle,standard,2023-01-29,96,2748.94
+877,Richard Taylor,customer877@example.com,south,San Francisco,bronze,2023-05-27,64,8456.7
+878,Elizabeth Brown,customer878@example.com,west,Washington DC,standard,2023-04-17,14,8663.28
+879,Patricia Martinez,customer879@example.com,east,Los Angeles,standard,2023-10-09,53,6113.65
+880,Linda Davis,customer880@example.com,south,Philadelphia,bronze,2023-02-15,86,4171.29
+881,Christopher Smith,customer881@example.com,west,Boston,standard,2023-09-20,60,8106.89
+882,Barbara Jackson,customer882@example.com,west,San Diego,premium,2023-01-01,7,5609.73
+883,Susan Martin,customer883@example.com,south,Houston,bronze,2023-06-24,36,1434.84
+884,Susan Smith,customer884@example.com,north,Portland,bronze,2023-11-05,93,9914.51
+885,Richard Martinez,customer885@example.com,north,Minneapolis,premium,2023-12-04,83,5665.33
+886,Lisa Martin,customer886@example.com,east,San Diego,standard,2023-08-05,38,1374.08
+887,Patricia Jackson,customer887@example.com,west,Washington DC,bronze,2023-07-19,42,2938.95
+888,Mary Lee,customer888@example.com,north,New York,bronze,2023-07-04,84,7154.0
+889,Christopher Martinez,customer889@example.com,south,New York,standard,2023-02-06,17,3472.18
+890,Barbara Johnson,customer890@example.com,west,Phoenix,premium,2023-12-29,5,2976.8
+891,Christopher White,customer891@example.com,north,Seattle,bronze,2023-04-05,86,295.91
+892,Charles Martinez,customer892@example.com,south,Chicago,bronze,2023-04-17,47,3505.28
+893,Christopher Lee,customer893@example.com,north,Minneapolis,premium,2023-06-21,89,218.85
+894,James Garcia,customer894@example.com,east,Boston,standard,2023-07-24,7,7045.22
+895,Sarah Martin,customer895@example.com,east,Houston,bronze,2023-05-03,10,533.08
+896,John Lee,customer896@example.com,south,Washington DC,bronze,2023-08-15,65,3453.42
+897,Susan Jones,customer897@example.com,east,Phoenix,bronze,2023-01-01,8,9382.17
+898,William Lee,customer898@example.com,south,Seattle,standard,2023-02-01,14,3935.36
+899,James Martinez,customer899@example.com,south,San Francisco,standard,2023-10-23,75,5040.16
+900,David Gonzalez,customer900@example.com,north,San Francisco,bronze,2023-03-23,95,7661.38
+901,Barbara Gonzalez,customer901@example.com,south,Atlanta,premium,2023-04-21,90,6724.09
+902,Nancy Brown,customer902@example.com,south,San Diego,standard,2023-08-27,58,1470.14
+903,Karen Johnson,customer903@example.com,east,Seattle,standard,2023-03-11,5,7268.31
+904,Patricia Garcia,customer904@example.com,south,San Diego,standard,2023-11-20,65,9481.75
+905,Thomas Smith,customer905@example.com,north,San Diego,standard,2023-12-10,29,2333.76
+906,William Miller,customer906@example.com,north,Dallas,standard,2023-01-26,14,1502.28
+907,Karen Jackson,customer907@example.com,west,San Francisco,bronze,2023-06-20,95,8184.34
+908,Susan Hernandez,customer908@example.com,east,Houston,premium,2023-05-16,63,2607.19
+909,Karen Garcia,customer909@example.com,east,Los Angeles,premium,2023-01-15,78,9754.6
+910,Lisa Jackson,customer910@example.com,east,Atlanta,standard,2023-11-24,69,6150.97
+911,William Gonzalez,customer911@example.com,west,New York,standard,2023-02-02,74,4081.85
+912,Jessica Brown,customer912@example.com,west,Boston,bronze,2023-10-14,12,558.65
+913,David Jones,customer913@example.com,east,Phoenix,premium,2023-03-04,56,2456.8
+914,Nancy Smith,customer914@example.com,west,Philadelphia,standard,2023-09-22,65,9772.77
+915,Charles Moore,customer915@example.com,east,Chicago,standard,2023-12-02,71,4299.46
+916,Jennifer Lee,customer916@example.com,south,Boston,premium,2023-07-13,83,7172.82
+917,Linda Moore,customer917@example.com,east,Boston,bronze,2023-01-18,45,2781.74
+918,John Perez,customer918@example.com,south,Austin,premium,2023-01-01,91,1943.92
+919,Robert Williams,customer919@example.com,south,Philadelphia,bronze,2023-08-19,56,2960.47
+920,Jennifer Jones,customer920@example.com,east,Phoenix,bronze,2023-12-13,3,2732.96
+921,Mary Gonzalez,customer921@example.com,south,Los Angeles,bronze,2023-05-09,31,3746.74
+922,Joseph Rodriguez,customer922@example.com,west,San Francisco,bronze,2023-04-18,83,120.91
+923,Mary Brown,customer923@example.com,east,San Francisco,premium,2023-08-11,38,1523.53
+924,William Miller,customer924@example.com,west,Washington DC,bronze,2023-09-02,83,5958.32
+925,Sarah Martinez,customer925@example.com,west,Dallas,premium,2023-04-02,45,7203.81
+926,Michael Hernandez,customer926@example.com,south,Washington DC,bronze,2023-07-07,88,5136.91
+927,Jessica White,customer927@example.com,south,Minneapolis,bronze,2023-12-24,96,3212.83
+928,James Thompson,customer928@example.com,east,Phoenix,premium,2023-11-22,64,4862.67
+929,Lisa Hernandez,customer929@example.com,west,Los Angeles,standard,2023-12-06,89,6551.05
+930,William Martinez,customer930@example.com,east,Minneapolis,standard,2023-01-08,26,6060.9
+931,Mary Williams,customer931@example.com,west,Minneapolis,bronze,2023-06-30,55,1615.41
+932,Barbara Hernandez,customer932@example.com,south,Seattle,standard,2023-06-08,82,8209.15
+933,Jennifer Moore,customer933@example.com,north,San Francisco,standard,2023-08-03,7,9292.97
+934,Karen Smith,customer934@example.com,north,Minneapolis,premium,2023-04-13,23,3471.43
+935,Karen Taylor,customer935@example.com,east,Phoenix,premium,2023-06-30,61,2826.03
+936,Daniel Martin,customer936@example.com,west,Los Angeles,standard,2023-11-12,43,6765.83
+937,Joseph Miller,customer937@example.com,north,Boston,standard,2023-03-28,35,7248.48
+938,Lisa Martin,customer938@example.com,south,Los Angeles,premium,2023-05-06,25,2137.49
+939,Richard Taylor,customer939@example.com,west,San Diego,standard,2023-11-02,7,1968.36
+940,Elizabeth Jones,customer940@example.com,north,Atlanta,standard,2023-02-14,31,7067.2
+941,Daniel Garcia,customer941@example.com,west,Washington DC,bronze,2023-04-01,24,190.76
+942,Richard White,customer942@example.com,west,New York,standard,2023-05-12,29,9923.92
+943,Patricia Gonzalez,customer943@example.com,north,Philadelphia,premium,2023-09-07,37,1411.8
+944,Michael Miller,customer944@example.com,west,San Diego,premium,2023-07-03,38,4298.57
+945,Nancy Hernandez,customer945@example.com,north,Atlanta,standard,2023-11-12,25,298.7
+946,James Anderson,customer946@example.com,west,Phoenix,standard,2023-02-25,86,5138.97
+947,Richard Wilson,customer947@example.com,south,Philadelphia,premium,2023-03-13,42,2029.28
+948,Charles Moore,customer948@example.com,south,Phoenix,premium,2023-08-05,13,6706.39
+949,Michael Martin,customer949@example.com,south,Washington DC,bronze,2023-05-10,96,4671.87
+950,Daniel Rodriguez,customer950@example.com,south,New York,premium,2023-06-07,2,7041.38
+951,Mary Lopez,customer951@example.com,south,San Diego,standard,2023-10-04,37,9552.27
+952,Nancy Perez,customer952@example.com,south,Phoenix,standard,2023-12-18,18,5765.21
+953,Lisa Taylor,customer953@example.com,west,Los Angeles,premium,2023-07-02,26,5193.42
+954,Charles Jackson,customer954@example.com,west,Boston,premium,2023-06-10,75,6388.14
+955,Patricia White,customer955@example.com,west,Philadelphia,standard,2023-09-01,64,7085.26
+956,Patricia Johnson,customer956@example.com,east,Chicago,standard,2023-11-01,23,4606.58
+957,James Jackson,customer957@example.com,east,Washington DC,premium,2023-07-21,21,7607.5
+958,Susan Brown,customer958@example.com,south,Austin,standard,2023-09-13,37,9093.53
+959,Nancy Rodriguez,customer959@example.com,east,San Francisco,bronze,2023-11-13,59,1147.87
+960,Susan Martin,customer960@example.com,north,Boston,standard,2023-03-11,70,2913.76
+961,Linda Lopez,customer961@example.com,north,Phoenix,bronze,2023-04-05,3,2180.32
+962,Elizabeth Anderson,customer962@example.com,north,Chicago,standard,2023-06-27,66,5289.79
+963,William Johnson,customer963@example.com,north,Minneapolis,standard,2023-02-25,48,5671.96
+964,Sarah Jones,customer964@example.com,east,Phoenix,bronze,2023-10-24,69,718.86
+965,William Perez,customer965@example.com,north,Washington DC,standard,2023-01-10,34,3134.15
+966,John Johnson,customer966@example.com,west,Philadelphia,standard,2023-05-23,57,3134.32
+967,Richard White,customer967@example.com,south,New York,premium,2023-02-01,55,117.65
+968,Michael Gonzalez,customer968@example.com,west,Phoenix,premium,2023-02-24,23,5514.28
+969,Mary Johnson,customer969@example.com,north,Los Angeles,premium,2023-05-15,71,2964.33
+970,Patricia Smith,customer970@example.com,south,Washington DC,standard,2023-07-26,100,2179.1
+971,Linda Wilson,customer971@example.com,west,Phoenix,standard,2023-03-03,71,4465.82
+972,Michael Anderson,customer972@example.com,south,Washington DC,standard,2023-11-22,36,7154.63
+973,Jessica Thompson,customer973@example.com,north,Portland,standard,2023-09-10,72,4102.21
+974,Michael Hernandez,customer974@example.com,east,Chicago,standard,2023-03-22,86,2554.45
+975,Michael Gonzalez,customer975@example.com,south,Philadelphia,premium,2023-09-12,43,7842.33
+976,Richard Johnson,customer976@example.com,east,Los Angeles,standard,2023-08-15,38,9005.93
+977,Karen Lopez,customer977@example.com,west,Austin,bronze,2023-09-14,13,3178.34
+978,Linda Garcia,customer978@example.com,south,San Francisco,standard,2023-11-29,98,5864.45
+979,Richard Williams,customer979@example.com,north,Chicago,premium,2023-09-18,66,4824.32
+980,Michael Hernandez,customer980@example.com,east,Portland,premium,2023-01-04,68,4830.77
+981,Susan Gonzalez,customer981@example.com,north,Phoenix,standard,2023-06-29,74,3914.65
+982,Lisa Lopez,customer982@example.com,north,Dallas,standard,2023-04-26,89,3670.59
+983,Jennifer Rodriguez,customer983@example.com,south,Atlanta,standard,2023-01-05,84,9275.54
+984,Joseph Hernandez,customer984@example.com,south,Dallas,bronze,2023-11-12,38,3420.0
+985,John White,customer985@example.com,north,Austin,bronze,2023-06-30,69,8606.32
+986,Jessica Rodriguez,customer986@example.com,east,Philadelphia,premium,2023-01-23,38,3897.19
+987,William Hernandez,customer987@example.com,south,San Francisco,bronze,2023-11-07,2,9833.58
+988,James Jones,customer988@example.com,east,Seattle,premium,2023-01-18,75,6205.53
+989,Patricia Brown,customer989@example.com,west,Philadelphia,premium,2023-01-06,88,2415.25
+990,Christopher Thompson,customer990@example.com,west,San Diego,standard,2023-12-07,93,6289.63
+991,Jessica Wilson,customer991@example.com,south,Philadelphia,premium,2023-06-18,89,3495.35
+992,Robert Thomas,customer992@example.com,north,San Francisco,standard,2023-12-02,38,4893.78
+993,Patricia Brown,customer993@example.com,north,Los Angeles,bronze,2023-02-17,10,6853.04
+994,Patricia Moore,customer994@example.com,north,Washington DC,premium,2023-08-31,62,3064.33
+995,Jessica White,customer995@example.com,west,Chicago,standard,2023-07-03,90,906.3
+996,John Anderson,customer996@example.com,west,Atlanta,bronze,2023-10-06,16,6209.47
+997,Jessica Taylor,customer997@example.com,west,Phoenix,standard,2023-05-23,27,3673.58
+998,John Garcia,customer998@example.com,west,Philadelphia,standard,2023-08-22,66,3307.63
+999,Charles Perez,customer999@example.com,east,Minneapolis,bronze,2023-11-07,64,6285.27
+1000,Richard Jones,customer1000@example.com,south,Seattle,bronze,2023-09-21,41,7193.79

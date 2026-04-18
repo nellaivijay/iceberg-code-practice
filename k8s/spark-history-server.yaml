@@ -1,0 +1,130 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spark-history-server
+  namespace: spark
+spec:
+  selector:
+    app: spark-history-server
+  ports:
+  - protocol: TCP
+    port: 18080
+    targetPort: 18080
+    name: http
+  type: LoadBalancer
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spark-history-config
+  namespace: spark
+data:
+  spark-defaults.conf: |
+    # Spark History Server Configuration
+    spark.history.fs.logDirectory=s3a://spark-logs/
+    spark.history.provider=org.apache.spark.deploy.history.FsHistoryProvider
+    spark.history.ui.port=18080
+    
+    # S3 Configuration (will be overridden by environment variables)
+    spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem
+    spark.hadoop.fs.s3a.path.style.access=true
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spark-history-server
+  namespace: spark
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spark-history-server
+  template:
+    metadata:
+      labels:
+        app: spark-history-server
+    spec:
+      containers:
+      - name: spark-history-server
+        image: apache/spark:3.5.0
+        command: ["/bin/bash", "-c"]
+        args:
+          - |
+            # Start Spark History Server
+            $SPARK_HOME/sbin/start-history-server.sh
+        env:
+        - name: SPARK_HOME
+          value: /opt/spark
+        - name: SPARK_HISTORY_OPTS
+          value: "-Dspark.history.fs.logDirectory=s3a://spark-logs/ -Dspark.history.provider=org.apache.spark.deploy.history.FsHistoryProvider"
+        # S3 Configuration Environment Variables
+        - name: AWS_ENDPOINT_URL
+          value: "http://objectscale.iceberg.svc.cluster.local:6080"
+        - name: AWS_ACCESS_KEY_ID
+          value: "spark-history-user"
+        - name: AWS_SECRET_ACCESS_KEY
+          value: "spark-history-password"
+        - name: HADOOP_CONF_DIR
+          value: /opt/hadoop/etc/hadoop
+        ports:
+        - containerPort: 18080
+          name: http
+          protocol: TCP
+        volumeMounts:
+        - name: spark-config
+          mountPath: /opt/spark/conf
+          readOnly: true
+        - name: hadoop-config
+          mountPath: /opt/hadoop/etc/hadoop
+          readOnly: true
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+      volumes:
+      - name: spark-config
+        configMap:
+          name: spark-history-config
+      - name: hadoop-config
+        configMap:
+          name: hadoop-s3-config
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hadoop-s3-config
+  namespace: spark
+data:
+  core-site.xml: |
+    <?xml version="1.0" encoding="UTF-8"?>
+    <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+    <configuration>
+      <property>
+        <name>fs.s3a.impl</name>
+        <value>org.apache.hadoop.fs.s3a.S3AFileSystem</value>
+      </property>
+      <property>
+        <name>fs.s3a.path.style.access</name>
+        <value>true</value>
+      </property>
+      <property>
+        <name>fs.s3a.endpoint</name>
+        <value>http://objectscale.iceberg.svc.cluster.local:6080</value>
+      </property>
+    </configuration>
+  hdfs-site.xml: |
+    <?xml version="1.0" encoding="UTF-8"?>
+    <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+    <configuration>
+      <property>
+        <name>fs.s3a.access.key</name>
+        <value>spark-history-user</value>
+      </property>
+      <property>
+        <name>fs.s3a.secret.key</name>
+        <value>spark-history-password</value>
+      </property>
+    </configuration>

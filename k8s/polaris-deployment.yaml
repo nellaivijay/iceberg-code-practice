@@ -1,0 +1,95 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: polaris
+  namespace: iceberg
+spec:
+  selector:
+    app: polaris
+  ports:
+  - protocol: TCP
+    port: 8181
+    targetPort: 8181
+    name: rest
+  type: ClusterIP
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: polaris-config
+  namespace: iceberg
+data:
+  polaris-config.yaml: |
+    # Apache Polaris Configuration
+    server:
+      port: 8181
+      host: "0.0.0.0"
+      
+    catalog:
+      type: "rest"
+      warehouse: "s3://iceberg-warehouse/"
+      
+    storage:
+      type: "s3"
+      endpoint: "http://objectscale.iceberg.svc.cluster.local:6080"
+      access-key: "admin"
+      secret-key: "password"
+      
+    auth:
+      type: "basic"
+      enabled: false  # Disabled for practice environment
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: polaris
+  namespace: iceberg
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: polaris
+  template:
+    metadata:
+      labels:
+        app: polaris
+    spec:
+      containers:
+      - name: polaris
+        image: apache/polaris:0.7.0-incubating
+        ports:
+        - containerPort: 8181
+          name: rest
+          protocol: TCP
+        env:
+        - name: POLARIS_PORT
+          value: "8181"
+        - name: POLARIS_HOST
+          value: "0.0.0.0"
+        volumeMounts:
+        - name: config
+          mountPath: /etc/polaris
+          readOnly: true
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8181
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8181
+          initialDelaySeconds: 10
+          periodSeconds: 5
+      volumes:
+      - name: config
+        configMap:
+          name: polaris-config

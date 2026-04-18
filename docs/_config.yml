@@ -1,0 +1,26 @@
+theme: jekyll-theme-minimal
+title: Apache Iceberg Practice Environment
+description: Free Hands-on Labs for Data Lakehouse Learning
+url: "https://yourusername.github.io/iceberg-practice-env"
+baseurl: "/iceberg-practice-env"
+github_username: yourusername
+
+# SEO
+google_analytics: # Add your GA tracking ID if desired
+twitter:
+  username: iceberg_practice
+  card: summary_large_image
+
+# Navigation
+nav:
+  - title: Home
+    url: /
+  - title: GitHub
+    url: https://github.com/yourusername/iceberg-practice-env
+  - title: Documentation
+    url: https://iceberg.apache.org/
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
