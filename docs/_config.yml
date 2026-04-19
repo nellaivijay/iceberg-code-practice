@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: Apache Iceberg Code Practice
-description: Free Hands-on Labs for Data Lakehouse Learning
+title: Apache Iceberg Code Practice - Free Hands-on Labs for Data Lakehouse Learning
+description: Master Apache Iceberg with free, vendor-independent hands-on labs. Practice Spark, Trino, DuckDB, Kafka, CDC, and modern data lakehouse patterns with real-world exercises.
 url: "https://nellaivijay.github.io/iceberg-code-practice"
 baseurl: "/iceberg-code-practice"
 github_username: nellaivijay
@@ -11,6 +11,13 @@ google_analytics: # Add your GA tracking ID if desired
 twitter:
   username: iceberg_practice
   card: summary_large_image
+
+# Social Media
+social:
+  name: Apache Iceberg Code Practice
+  links:
+    - https://github.com/nellaivijay/iceberg-code-practice
+    - https://twitter.com/iceberg_practice
 
 # Navigation
 nav:
@@ -33,7 +40,33 @@ google_site_verification: # Add if needed
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+# SEO Tags
+keywords:
+  - Apache Iceberg
+  - data lakehouse
+  - Apache Spark
+  - Trino
+  - DuckDB
+  - Kafka
+  - Debezium
+  - data engineering
+  - table format
+  - data lake
+  - CDC
+  - change data capture
+  - streaming
+  - real-time analytics
+  - open source
+  - hands-on labs
+  - learning
+  - tutorials
+
+# Open Graph
+og_image: /assets/images/og-image.png
+twitter_image: /assets/images/twitter-image.png
