@@ -61,9 +61,15 @@ spec:
         - name: AWS_ENDPOINT_URL
           value: "http://objectscale.iceberg.svc.cluster.local:6080"
         - name: AWS_ACCESS_KEY_ID
-          value: "spark-history-user"
+          valueFrom:
+            secretKeyRef:
+              name: iceberg-spark-secrets
+              key: spark-history-access-key
         - name: AWS_SECRET_ACCESS_KEY
-          value: "spark-history-password"
+          valueFrom:
+            secretKeyRef:
+              name: iceberg-spark-secrets
+              key: spark-history-secret-key
         - name: HADOOP_CONF_DIR
           value: /opt/hadoop/etc/hadoop
         ports:
@@ -121,10 +127,10 @@ data:
     <configuration>
       <property>
         <name>fs.s3a.access.key</name>
-        <value>spark-history-user</value>
+        <value>${AWS_ACCESS_KEY_ID}</value>
       </property>
       <property>
         <name>fs.s3a.secret.key</name>
-        <value>spark-history-password</value>
+        <value>${AWS_SECRET_ACCESS_KEY}</value>
       </property>
     </configuration>

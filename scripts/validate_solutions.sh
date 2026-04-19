@@ -111,6 +111,7 @@ validate_notebook() {
     local lab_number=$1
     local notebook_file="$SOLUTIONS_DIR/lab-${lab_number:0:1}-*-solution.ipynb"
     local log_file="$LOG_DIR/validation_lab_${lab_number}_${TIMESTAMP}.log"
+    local temp_script="$LOG_DIR/lab_${lab_number}_temp.scala"
     
     log_step "Validating Lab $lab_number"
     
@@ -158,7 +159,12 @@ validate_notebook() {
     fi
     
     # Check execution result
-    if [ $? -eq 0 ]; then
+    local execution_result=$?
+    
+    # Cleanup temporary files
+    rm -f "$temp_script"
+    
+    if [ $execution_result -eq 0 ]; then
         log_success "Lab $lab_number validation passed"
         return 0
     else
@@ -173,11 +179,11 @@ validate_scala_notebook() {
     local lab_number=$1
     local notebook_file="$SOLUTIONS_DIR/lab-${lab_number:0:1}-*-solution.ipynb"
     local log_file="$LOG_DIR/validation_lab_${lab_number}_${TIMESTAMP}.log"
+    local temp_script="$LOG_DIR/lab_${lab_number}_script.scala"
     
     log_step "Validating Lab $lab_number (Scala via Spark Shell)"
     
     # Extract Scala code from notebook
-    local temp_script="$LOG_DIR/lab_${lab_number}_script.scala"
     python3 "$SCRIPT_DIR/extract_scala_from_notebook.py" "$notebook_file" "$temp_script"
     
     # Execute with Spark shell
@@ -189,14 +195,19 @@ validate_scala_notebook() {
         --conf spark.sql.catalog.iceberg.type=rest \
         --conf spark.sql.catalog.iceberg.uri=http://localhost:8181/api/catalog \
         --conf spark.hadoop.fs.s3a.endpoint=http://localhost:9000 \
-        --conf spark.hadoop.fs.s3a.access.key=minioadmin \
-        --conf spark.hadoop.fs.s3a.secret.key=minioadmin \
+        --conf spark.hadoop.fs.s3a.access.key=${MINIO_ROOT_USER:-minioadmin} \
+        --conf spark.hadoop.fs.s3a.secret.key=${MINIO_ROOT_PASSWORD:-minioadmin} \
         --conf spark.hadoop.fs.s3a.path.style.access=true \
         -i "$temp_script" \
         > "$log_file" 2>&1
     
     # Check execution result
-    if [ $? -eq 0 ]; then
+    local execution_result=$?
+    
+    # Cleanup temporary files
+    rm -f "$temp_script"
+    
+    if [ $execution_result -eq 0 ]; then
         log_success "Lab $lab_number validation passed"
         return 0
     else
@@ -223,8 +234,26 @@ main() {
         labs_to_validate=("$LAB_NUMBER")
         log_info "Validating specific lab: $LAB_NUMBER"
     else
-        labs_to_validate=(1 2 3 4 5 6)
-        log_info "Validating all labs"
+        # Dynamically discover all available labs
+        for solution_file in "$SOLUTIONS_DIR"/lab-*-solution.ipynb; do
+            if [ -f "$solution_file" ]; then
+                # Extract lab number from filename
+                lab_num=$(basename "$solution_file" | sed 's/lab-0*\([0-9]*\)-.*/\1/')
+                if [[ "$lab_num" =~ ^[0-9]+$ ]]; then
+                    labs_to_validate+=("$lab_num")
+                fi
+            fi
+        done
+        
+        # Sort and remove duplicates
+        labs_to_validate=($(echo "${labs_to_validate[@]}" | tr ' ' '\n' | sort -n | uniq | tr '\n' ' '))
+        
+        if [ ${#labs_to_validate[@]} -eq 0 ]; then
+            log_error "No solution notebooks found in $SOLUTIONS_DIR"
+            exit 1
+        fi
+        
+        log_info "Validating all discovered labs: ${labs_to_validate[@]}"
     fi
     
     # Validate each lab

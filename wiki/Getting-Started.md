@@ -17,12 +17,12 @@ Choose one of these methods:
 
 ### Option A: Using Git (Recommended)
 ```bash
-git clone https://github.com/yourusername/iceberg-code-practice.git
+git clone https://github.com/nellaivijay/iceberg-code-practice.git
 cd iceberg-code-practice
 ```
 
 ### Option B: Download ZIP
-1. Go to https://github.com/yourusername/iceberg-code-practice
+1. Go to https://github.com/nellaivijay/iceberg-code-practice
 2. Click the green "Code" button
 3. Select "Download ZIP"
 4. Extract the files to your computer
@@ -333,8 +333,8 @@ k3s-uninstall.sh
 - Check the [Troubleshooting](Troubleshooting.md) page
 - Review [Best Practices](Best-Practices.md)
 - Open an issue on GitHub
-- Contact: nellaivijay@gmail.com
+- Start a discussion in GitHub Discussions
 
 ---
 
-**Ready to start learning?** [Begin with Lab 0](https://github.com/yourusername/iceberg-code-practice/blob/main/labs/lab-00-sample-database.md) 🚀
+**Ready to start learning?** [Begin with Lab 0](https://github.com/nellaivijay/iceberg-code-practice/blob/main/labs/lab-00-sample-database.md) 🚀

@@ -522,7 +522,7 @@ When reporting issues, include:
 - [Kafka Documentation](https://kafka.apache.org/documentation/)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/apache-iceberg)
 - [Iceberg Community Slack](https://apache-iceberg.slack.com/)
-- Contact: nellaivijay@gmail.com
+- Open an issue on GitHub for project-specific help
 
 ## Common Error Messages
 
@@ -546,4 +546,4 @@ When reporting issues, include:
 
 ---
 
-**Still stuck?** [Open an issue on GitHub](https://github.com/yourusername/iceberg-practice-env/issues) and we'll help you out! 🆘
+**Still stuck?** [Open an issue on GitHub](https://github.com/nellaivijay/iceberg-code-practice/issues) and we'll help you out! 🆘

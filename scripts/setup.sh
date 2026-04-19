@@ -4,10 +4,15 @@ set -e
 # Apache Iceberg Practice Environment Setup Script
 # This script automates the setup of a vendor-independent Iceberg practice environment
 
+# Get script directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+
 echo "🏗️  Setting up Apache Iceberg Practice Environment..."
+echo "Project directory: $PROJECT_DIR"
 
 # Configuration
-STORAGE_BACKEND="${STORAGE_BACKEND:-objectscale}"
+STORAGE_BACKEND="${STORAGE_BACKEND:-minio}"
 SPARK_HISTORY_PORT="${SPARK_HISTORY_PORT:-18080}"
 SPARK_EVENT_LOGS="${SPARK_EVENT_LOGS:-s3a://spark-logs/}"
 
@@ -33,11 +38,13 @@ log_error() {
 check_prerequisites() {
     log_info "Checking prerequisites..."
     
+    local missing_prerequisites=0
+    
     if command -v docker &> /dev/null; then
         log_info "✓ Docker found"
     else
         log_error "Docker not found. Please install Docker first."
-        exit 1
+        missing_prerequisites=$((missing_prerequisites + 1))
     fi
     
     if command -v kubectl &> /dev/null; then
@@ -51,6 +58,17 @@ check_prerequisites() {
     else
         log_warn "k3s not found. Will use Docker Compose setup."
     fi
+    
+    if command -v docker-compose &> /dev/null || command -v docker &> /dev/null && docker compose version &> /dev/null; then
+        log_info "✓ Docker Compose found"
+    else
+        log_warn "Docker Compose not found. Install Docker Compose for Docker setup."
+    fi
+    
+    if [ $missing_prerequisites -gt 0 ]; then
+        log_error "Missing $missing_prerequisites required prerequisite(s). Please install them and try again."
+        exit 1
+    fi
 }
 
 # Setup storage backend
@@ -58,11 +76,22 @@ setup_storage() {
     log_info "Setting up storage backend: $STORAGE_BACKEND"
     
     if [ "$STORAGE_BACKEND" = "objectscale" ]; then
-        setup_objectscale
+        setup_objectscale || {
+            log_error "Failed to setup ObjectScale. Falling back to MinIO."
+            STORAGE_BACKEND="minio"
+            setup_minio || {
+                log_error "Failed to setup MinIO as fallback."
+                exit 1
+            }
+        }
     elif [ "$STORAGE_BACKEND" = "minio" ]; then
-        setup_minio
+        setup_minio || {
+            log_error "Failed to setup MinIO."
+            exit 1
+        }
     else
         log_error "Unknown storage backend: $STORAGE_BACKEND"
+        log_info "Valid options: objectscale, minio"
         exit 1
     fi
 }
@@ -216,10 +245,10 @@ configure_spark_logging() {
     log_info "Configuring Spark for persistent logging..."
     
     # Create Spark configuration directory
-    mkdir -p config/spark
+    mkdir -p "$PROJECT_DIR/config/spark"
     
     # Generate spark-defaults.conf with event logging
-    cat > config/spark/spark-defaults.conf <<EOF
+    cat > "$PROJECT_DIR/config/spark/spark-defaults.conf" <<EOF
 # Spark Event Logging
 spark.eventLog.enabled=true
 spark.eventLog.dir=$SPARK_EVENT_LOGS
@@ -238,7 +267,7 @@ spark.hadoop.fs.s3a.path.style.access=true
 spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem
 EOF
     
-    log_info "✓ Spark configuration created"
+    log_info "✓ Spark configuration created at $PROJECT_DIR/config/spark/spark-defaults.conf"
 }
 
 # Main setup process
@@ -256,24 +285,29 @@ main() {
         configure_spark_logging
     else
         log_warn "Kubernetes not available. Use Docker Compose setup instead."
-        log_info "Run: docker-compose up -d"
+        log_info "To start with Docker Compose:"
+        log_info "  1. Copy .env.example to .env and configure your credentials"
+        log_info "  2. Run: docker-compose up -d"
     fi
     
     log_info "🎉 Setup complete!"
     log_info ""
     log_info "Next steps:"
-    log_info "1. Start the environment:"
-    if [ "$STORAGE_BACKEND" = "objectscale" ]; then
-        log_info "   - Make sure ObjectScale is running"
+    log_info "1. Configure environment variables:"
+    log_info "   cp .env.example .env"
+    log_info "   # Edit .env with your credentials"
+    log_info ""
+    log_info "2. Start the environment:"
+    if command -v kubectl &> /dev/null && command -v k3s &> /dev/null; then
+        log_info "   - Kubernetes setup is configured"
+        log_info "   - Verify deployment: kubectl get pods -n iceberg"
     else
         log_info "   - docker-compose up -d"
     fi
-    log_info "2. Verify deployment:"
-    log_info "   - kubectl get pods -n iceberg"
-    log_info "   - kubectl get pods -n spark"
-    log_info "3. Access Spark History Server:"
-    log_info "   - kubectl port-forward -n spark svc/spark-history-server $SPARK_HISTORY_PORT:18080"
-    log_info "   - Open http://localhost:$SPARK_HISTORY_PORT"
+    log_info ""
+    log_info "3. Generate sample data (optional):"
+    log_info "   python3 scripts/generate_sample_data.py"
+    log_info ""
     log_info "4. Start with Lab 1:"
     log_info "   - See labs/lab-01-setup.md"
 }

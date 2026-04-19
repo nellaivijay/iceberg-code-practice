@@ -6,11 +6,13 @@ Creates realistic e-commerce data including customers, products, orders, and tra
 
 import csv
 import random
+import os
 from datetime import datetime, timedelta
 from pathlib import Path
 
 # Configuration
-SAMPLE_DIR = Path("/home/ramdov/projects/iceberg-practice-env/data/sample")
+PROJECT_DIR = Path(__file__).parent.parent.absolute()
+SAMPLE_DIR = PROJECT_DIR / "data" / "sample"
 NUM_CUSTOMERS = 1000
 NUM_PRODUCTS = 200
 NUM_ORDERS = 5000

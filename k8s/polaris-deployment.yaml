@@ -32,8 +32,8 @@ data:
     storage:
       type: "s3"
       endpoint: "http://objectscale.iceberg.svc.cluster.local:6080"
-      access-key: "admin"
-      secret-key: "password"
+      access-key: ${STORAGE_ACCESS_KEY}
+      secret-key: ${STORAGE_SECRET_KEY}
       
     auth:
       type: "basic"
@@ -66,6 +66,16 @@ spec:
           value: "8181"
         - name: POLARIS_HOST
           value: "0.0.0.0"
+        - name: STORAGE_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: iceberg-storage-secrets
+              key: storage-access-key
+        - name: STORAGE_SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: iceberg-storage-secrets
+              key: storage-secret-key
         volumeMounts:
         - name: config
           mountPath: /etc/polaris

@@ -47,7 +47,7 @@ Join our community of learners:
 
 ## 🔗 Resources
 
-- [Main Repository](https://github.com/yourusername/iceberg-code-practice)
+- [Main Repository](https://github.com/nellaivijay/iceberg-code-practice)
 - [Apache Iceberg Documentation](https://iceberg.apache.org/)
 - [Apache Spark Documentation](https://spark.apache.org/docs/latest/)
 - [Trino Documentation](https://trino.io/docs/current/)
@@ -126,7 +126,8 @@ By completing all labs, you will develop skills in:
 - Check the [Troubleshooting](Troubleshooting.md) page
 - Review [Best Practices](Best-Practices.md)
 - Open an issue on GitHub
-- Contact: nellaivijay@gmail.com
+- Start a discussion in GitHub Discussions
+- Check the [Learning Path](Learning-Path.md) for guidance
 
 ---
 

@@ -170,14 +170,17 @@ By contributing, you agree that your contributions will be licensed under the Ap
 
 ## Questions?
 
-If you have questions about contributing, please open an issue or contact us at nellaivijay@gmail.com
+If you have questions about contributing, please:
+- Open an issue on GitHub with your question
+- Check existing issues and discussions for similar topics
+- Review the wiki for additional guidance
 
 ## Recognition
 
 Contributors will be recognized in:
-- The CONTRIBUTORS.md file (create if needed)
 - Release notes for significant contributions
 - Lab documentation for substantial additions
+- The project's contributor list
 
 ---
 

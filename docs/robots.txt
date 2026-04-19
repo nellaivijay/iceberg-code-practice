@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://yourusername.github.io/iceberg-code-practice/sitemap.xml
+Sitemap: https://nellaivijay.github.io/iceberg-code-practice/sitemap.xml

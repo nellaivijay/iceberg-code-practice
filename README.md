@@ -8,11 +8,48 @@ Author: Iceberg Code Practice Community
 
 # Apache Iceberg Code Practice
 
-## 🎯 Overview
+## 🎯 Educational Mission
 
-A comprehensive, vendor-independent Apache Iceberg code practice repository designed for learning and experimentation with Apache Iceberg, Apache Spark, and modern data lakehouse architectures through hands-on coding exercises.
+A comprehensive, vendor-independent Apache Iceberg learning environment designed for developers, data engineers, and students who want to master modern data lakehouse concepts through hands-on practice.
 
-**12 hands-on labs with 100+ exercises. Completely free and open source.**
+**12 progressive labs with 100+ exercises. Completely free and open source. Built for learners, by learners.**
+
+## 🎓 Why This Repository?
+
+This educational resource fills the gap between theoretical knowledge and practical skills in Apache Iceberg and data lakehouse technologies:
+
+- **Learn by Doing**: Progressive hands-on labs build real skills
+- **Vendor Independent**: Master concepts that apply across all platforms
+- **Production Patterns**: Learn best practices used in real data engineering
+- **Multi-Engine Experience**: Work with Spark, Trino, DuckDB, and more
+- **Community Driven**: Built and improved by the data engineering community
+
+## 🎓 Learning Approach
+
+### Progressive Complexity
+
+Our labs are designed to build knowledge progressively:
+
+- **Beginner (Labs 0-2)**: Foundation and basic operations
+- **Intermediate (Labs 3-5)**: Advanced features and optimization
+- **Advanced (Labs 6-11)**: Production patterns and multi-engine architecture
+
+### Hands-On Learning
+
+Each lab includes:
+- **Clear Learning Objectives**: Know what you'll achieve
+- **Step-by-Step Instructions**: Guided exercises
+- **Real-World Scenarios**: Practical use cases
+- **Solution Notebooks**: Reference implementations
+- **Conceptual Guides**: Deep-dive explanations
+
+### Multi-Engine Experience
+
+Gain experience with different query engines:
+- **Apache Spark**: Data processing and ETL
+- **Trino**: Interactive SQL analytics
+- **DuckDB**: Local analytics and testing
+- **Kafka + Debezium**: Real-time streaming and CDC
 
 ## 🏗️ Architecture
 
@@ -202,16 +239,29 @@ python3 scripts/generate_sample_data.py
 
 ## 🚀 Quick Start
 
+### 🎓 New to Apache Iceberg?
+
+Follow our recommended learning path:
+
+1. **Start with Fundamentals**: Read [Iceberg Fundamentals](https://github.com/nellaivijay/iceberg-code-practice/wiki/Iceberg-Fundamentals) wiki page
+2. **Set Up Environment**: Follow [Getting Started Guide](https://github.com/nellaivijay/iceberg-code-practice/wiki/Getting-Started)
+3. **Begin Lab 0**: Load sample data with [Lab 0](https://github.com/nellaivijay/iceberg-code-practice/blob/main/labs/lab-00-sample-database.md)
+4. **Progress Through Labs**: Follow the [Learning Path](https://github.com/nellaivijay/iceberg-code-practice/wiki/Learning-Path)
+
+### 📋 Setup Options
+
 ### Option 1: Kubernetes with k3s (Recommended)
 ```bash
-cd iceberg-practice-env
+cd iceberg-code-practice
 ./scripts/setup.sh
 kubectl apply -f k8s/
 ```
 
 ### Option 2: Docker Compose (Lightweight)
 ```bash
-cd iceberg-practice-env
+cd iceberg-code-practice
+cp .env.example .env
+# Edit .env with your credentials
 docker-compose up -d
 ```
 
@@ -244,11 +294,24 @@ export SPARK_EVENT_LOGS=s3a://spark-logs/
 
 ## 📚 Documentation
 
+### 🎓 Educational Resources
+
+**Wiki Guides** (Comprehensive learning materials):
+- [Wiki Home](https://github.com/nellaivijay/iceberg-code-practice/wiki) - Main wiki page with all guides
+- [Getting Started Guide](https://github.com/nellaivijay/iceberg-code-practice/wiki/Getting-Started) - Complete setup and first steps
+- [Iceberg Fundamentals](https://github.com/nellaivijay/iceberg-code-practice/wiki/Iceberg-Fundamentals) - Core concepts and architecture
+- [Lab Guides](https://github.com/nellaivijay/iceberg-code-practice/wiki/Lab-Guides) - Detailed lab walkthroughs
+- [Learning Path](https://github.com/nellaivijay/iceberg-code-practice/wiki/Learning-Path) - Recommended learning sequence
+- [Best Practices](https://github.com/nellaivijay/iceberg-code-practice/wiki/Best-Practices) - Production-ready patterns
+- [Troubleshooting](https://github.com/nellaivijay/iceberg-code-practice/wiki/Troubleshooting) - Common issues and solutions
+
 ### Core Documentation
 - [Setup Guide](docs/SETUP_GUIDE.md) - Detailed setup instructions for K8s and Docker Compose
 - [Architecture Overview](docs/ARCHITECTURE.md) - System architecture and component details
 - [Lab Guide](docs/LAB_GUIDE.md) - Complete lab sequence and learning path
 - [Troubleshooting](docs/TROUBLESHOOTING.md) - Common issues and solutions (including ObjectScale-specific issues)
+- [GitHub Pages Setup](docs/GITHUB_PAGES_SETUP.md) - Documentation deployment guide
+- [Wiki Setup](docs/WIKI_SETUP.md) - Wiki contribution and maintenance guide
 
 ### 🎓 Conceptual Guides (Tutorials)
 Deep-dive tutorials explaining the "Why" behind the "How":
@@ -329,11 +392,35 @@ This is a practice environment for learning. Feel free to extend labs, add examp
 
 > **Disclaimer**: This is an independent educational resource for learning Apache Iceberg and data lakehouse concepts. It is not affiliated with, endorsed by, or sponsored by Apache Iceberg or any vendor.
 
-## 👥 Contributors
+## 👥 Community and Learning
 
-This repository welcomes contributions from the data engineering community. Special thanks to contributors who help improve labs, fix bugs, and add new exercises.
+This repository is an open educational resource built for the data engineering community. We believe in learning together and sharing knowledge.
 
-**Contact**: nellaivijay@gmail.com
+### 🤝 Learning Together
+
+- **📖 Comprehensive Wiki**: Detailed guides and tutorials for all skill levels
+- **💬 GitHub Discussions**: Ask questions and share insights with fellow learners
+- **🐛 Issue Tracking**: Report bugs and suggest improvements
+- **🔄 Pull Requests**: Contribute labs, fixes, and enhancements
+- **⭐ Star the Repo**: Show your support and help others discover this resource
+
+### 🎓 Contributing to Learning
+
+We welcome contributions that improve the educational value:
+- **New Labs**: Suggest new lab topics and exercises
+- **Better Explanations**: Improve clarity of existing content
+- **Additional Examples**: Add more practical examples
+- **Translation**: Help translate content for global learners
+- **Bug Fixes**: Report and fix issues in labs or documentation
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
+
+### 📚 Additional Learning Resources
+
+- **Official Apache Iceberg Documentation**: [https://iceberg.apache.org/](https://iceberg.apache.org/)
+- **Apache Iceberg Slack Community**: [Join the conversation](https://apache-iceberg.slack.com/)
+- **Iceberg Blog**: Latest updates and articles
+- **Conference Talks**: Learn from industry experts
 
 ## 📄 License
 
