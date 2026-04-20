@@ -1,3 +1,29 @@
+# Apache Iceberg Code Practice
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![Apache Iceberg](https://img.shields.io/badge/Apache%20Iceberg-Latest-blue)](https://iceberg.apache.org/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)](https://jupyter.org/)
+
+## 📖 Table of Contents
+
+- [🎯 Educational Mission](#-educational-mission)
+- [🎓 Why This Repository?](#-why-this-repository)
+- [🎓 Learning Approach](#-learning-approach)
+- [🏗️ Architecture](#-architecture)
+- [🛠️ Core Stack](#️-core-stack)
+- [🎓 Lab Structure](#-lab-structure)
+- [💾 Sample Database](#-sample-database)
+- [🚀 Quick Start](#-quick-start)
+- [📋 Requirements](#-requirements)
+- [🔧 Configuration](#-configuration)
+- [📚 Documentation](#-documentation)
+- [🆘 Vendor Independence](#-vendor-independence)
+- [🤝 Contributing](#-contributing)
+- [👥 Community and Learning](#-community-and-learning)
+- [🔗 Related Practice Repositories](#-related-practice-repositories)
+- [📄 License](#-license)
+
 <!--
 SEO Metadata
 Title: Apache Iceberg Code Practice - Free Hands-on Labs for Data Lakehouse Learning
@@ -5,8 +31,6 @@ Description: Master Apache Iceberg with free, vendor-independent hands-on labs. 
 Keywords: apache iceberg, data lakehouse, spark, trino, duckdb, kafka, cdc, data engineering, lakehouse architecture, table format, data lake, open source data
 Author: Iceberg Code Practice Community
 -->
-
-# Apache Iceberg Code Practice
 
 ## 🎯 Educational Mission
 

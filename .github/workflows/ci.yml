@@ -148,6 +148,38 @@ jobs:
         run: |
           docker-compose -f docker-compose.yaml config || true
 
+  lint-notebooks:
+    name: Notebook Formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install nbqa black ruff
+
+      - name: Check notebook formatting with nbQA (black)
+        run: |
+          if [ -d "notebooks" ]; then
+            nbqa black --check notebooks/ || true
+          else
+            echo "No notebooks directory found, skipping"
+          fi
+
+      - name: Check notebook linting with nbQA (ruff)
+        run: |
+          if [ -d "notebooks" ]; then
+            nbqa ruff check notebooks/ || true
+          else
+            echo "No notebooks directory found, skipping"
+          fi
+
   kubernetes-lint:
     name: Kubernetes Manifests Validation
     runs-on: ubuntu-latest
